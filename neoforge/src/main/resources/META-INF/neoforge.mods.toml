@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[2,)"
+loaderVersion="[4,)"
 issueTrackerURL="https://github.com/FinnSetchell/MoogsEndStructures/issues" #optional
 license="https://github.com/FinnSetchell/MoogsEndStructures/blob/1.20-MultiLoader/LICENSE"
 
@@ -28,7 +28,7 @@ license="https://github.com/FinnSetchell/MoogsEndStructures/blob/1.20-MultiLoade
 [[dependencies.mns]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21,)"
+    versionRange="[1.21.5,)"
 
 [[dependencies.mns]]
     modId="neoforge"

@@ -303,7 +303,7 @@ public class PieceLimitedJigsawManager {
                 BlockPos jigsawBlockTargetPos = jigsawBlockPos.relative(direction);
 
                 // Get the jigsaw block's piece pool
-                ResourceLocation jigsawBlockPool = ResourceLocation.tryParse(jigsawBlock.info().nbt().getString("pool"));
+                ResourceLocation jigsawBlockPool = ResourceLocation.tryParse(jigsawBlock.info().nbt().getStringOr("pool", ""));
                 Optional<StructureTemplatePool> poolOptional = this.poolRegistry.getOptional(jigsawBlockPool);
 
                 // Only continue if we are using the jigsaw pattern registry and if it is not empty
@@ -455,7 +455,7 @@ public class PieceLimitedJigsawManager {
                                 return 0;
                             }
                             else {
-                                ResourceLocation candidateTargetPool = ResourceLocation.tryParse(pieceCandidateJigsawBlock.info().nbt().getString("pool"));
+                                ResourceLocation candidateTargetPool = ResourceLocation.tryParse(pieceCandidateJigsawBlock.info().nbt().getStringOr("pool", ""));
                                 Optional<StructureTemplatePool> candidateTargetPoolOptional = this.poolRegistry.getOptional(candidateTargetPool);
                                 if (candidateTargetPoolOptional.isEmpty()) {
                                     MNSCommon.LOGGER.warn("Moog's Nether Structures: Non-existent child pool attempted to be spawned: {} which is being called from {}. Let Moog's Nether Structures dev (FinnDog) know about this log entry.", candidateTargetPool, candidatePiece instanceof SinglePoolElement ? ((SinglePoolElementAccessor) candidatePiece).mns_getTemplate().left().get() : "not a SinglePoolElement class");
