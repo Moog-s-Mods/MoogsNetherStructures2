@@ -19,14 +19,13 @@ public class FabricReloadListener implements IdentifiableResourceReloadListener 
         this.listener = listener;
     }
 
-
     @Override
     public ResourceLocation getFabricId() {
         return id;
     }
 
     @Override
-    public CompletableFuture<Void> reload(PreparationBarrier barrier, ResourceManager manager, Executor executor, Executor executor2) {
-        return listener.reload(barrier, manager, executor, executor2);
+    public CompletableFuture<Void> reload(SharedState sharedState, Executor executor, PreparationBarrier preparationBarrier, Executor executor2) {
+        return listener.reload(sharedState, executor, preparationBarrier, executor2);
     }
 }

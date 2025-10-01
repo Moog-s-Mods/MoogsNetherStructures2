@@ -42,7 +42,7 @@ shadowJar {
 remapJar {
     inputFile.set shadowJar.archiveFile
     dependsOn shadowJar
-    archiveClassifier.set(null)
+    archiveClassifier.set("neoforge")
     atAccessWideners.add("mns.accesswidener") // this is a path inside the mod jar
 }
 
@@ -75,13 +75,13 @@ publishMods {
     modrinth {
         accessToken = providers.environmentVariable("MODRINTH_API_KEY")
         projectId = "nGUXvjTa"
-        minecraftVersions.add("1.21.8")
+        minecraftVersions.add("1.21.9")
     }
 
     curseforge {
         accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
         projectId = "967466"
-        minecraftVersions.add("1.21.8")
+        minecraftVersions.add("1.21.9")
         serverRequired = true
     }
 
