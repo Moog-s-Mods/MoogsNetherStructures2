@@ -1,31 +1,39 @@
-# gradle
-
-.gradle/
+# Build outputs
 build/
 out/
 classes/
-gradle/wrapper
+*.class
 
-# eclipse
-
-*.launch
-
-# idea
-
+# IDE files
 .idea/
 *.iml
 *.ipr
 *.iws
-
-# vscode
-
-.settings/
 .vscode/
-bin/
-.classpath
-.project
+*.swp
+*.swo
+*~
 
-# fabric
+# Minecraft specific
+world/
+saves/
+debug/
+crash-reports/
+logs/
+*.lock
 
-run/
-deps/
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+gradlew
+gradlew.bat
+gradle/
+
+
+# Git
+.gitignore
+
+NAMESPACE_GUIDE.md
+/bin/
