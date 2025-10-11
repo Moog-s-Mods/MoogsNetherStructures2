@@ -29,3 +29,4 @@ bin/
 
 run/
 deps/
+/NAMESPACE_GUIDE.md

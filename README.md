@@ -1,61 +1,41 @@
 ![banner](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_header.webp)
 
-* * *
-
-[![](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D8LKA5N)
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D8LKA5N)
 
 [![Discord](https://img.shields.io/discord/869218732650688543?color=c20045&label=DISCORD&style=for-the-badge)](https://discord.com/invite/S5nffJbuvA)
 
-[![](https://img.shields.io/badge/My-projects-c20045?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/members/finndog_123/projects)
+[![My projects](https://img.shields.io/badge/CurseForge-projects-c20045?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/members/finndog_123/projects)
 
-* * *
+[![My projects](https://img.shields.io/badge/Modrinth-projects-c20045?style=for-the-badge&logo=modrinth)](https://modrinth.com/user/FinnSetchell)
 
 ![Overview](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_overview.webp)
 
-* * *
+This Mod works for Forge, Fabric, NeoForge, and Quilt! It can also be installed server-side only. Forge support was dropped after 1.20.4
 
-**FEEDBACK**
+### ABOUT
 
-Please comment any ideas you may have to improve this mod. Any and all feedback is greatly appreciated :)
+Moogs Nether Structures adds new and exciting structures to the Nether dimension in Minecraft. You'll find loot, tough enemies, and fun challenges as you explore. This mod works great on its own or with our main structure mod, MVS. It fits well into any modpack and keeps the vanilla feel of the game. Jump into the Nether and see what you can discover!
 
-**FORGE AND FABRIC**
+To see all of the structures, head to the [images tab](https://www.curseforge.com/minecraft/mc-mods/mns-moogs-nether-structures/gallery).
 
-Look for files marked with **\[FORGE\]** or **\[FABRIC\]**.  
-_**Fabric** mods are marked with **BETA** so that they show up on the side, but they are actually **RELEASE's**_
+See our main structure mod, MVS, [here](https://www.curseforge.com/minecraft/mc-mods/moogs-voyager-structures).
 
-**ABOUT**
+### Config pack
 
-Moogs Voyager Structures brings life, fun and variety to your Minecraft world! Explore awesome new structures made with vanilla blocks and entities, and discover loot, enemies, and villagers along the way. This mod is compatible with any modpack and keeps the vanilla feel of the game!
+Every aspect of the mod is customizable using datapacks. A template with full instructions can be found [here](https://www.curseforge.com/minecraft/texture-packs/mns-moogs-nether-structures-config-pack)
 
-To see all of the structures, head to the [images tab](https://www.curseforge.com/minecraft/mc-mods/moogs-voyager-structures/screenshots) or the [imgur post](https://imgur.com/gallery/Gypu4hD)
+![features](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_features.webp) ![collage](https://imgur.com/RH0cIuq.png)
 
-**Config pack**
+### VIDEOS
 
-[link](https://www.curseforge.com/minecraft/texture-packs/mns-moogs-voyager-structure-config-pack)
+<div><span><iframe src="https://www.youtube.com/embed/wlzgAujeqFY?si=3V3KSkn-BeHOrrIY?wmode=transparent" width="320" height="180" allowfullscreen="allowfullscreen"></iframe></span></div>
 
-A datapack you can use to configure the mod.
+### MODPACKS
 
-**Installation**
+See all modpacks [here](https://www.modpackindex.com/modpack/finder?included_mods=55402).
 
-1\. simply download the version you need  
-2\. then add it to your mods folder  
-It does not require any settings to be changed for it and should work with all mods
+![banner](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_discord.webp)
 
-* * *
-
-![features](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_features.webp)![collage](https://i.imgur.com/epC7vBE.png)
-
-* * *
-
-![](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_discord.webp)
-
-* * *
-
-**The best and fastest way to get replies is to join our [discord server](https://discord.gg/S5nffJbuvA)**
-
-[**![discord](https://i.imgur.com/sfAmR3Y.png)**](https://discord.gg/S5nffJbuvA "discord invite")
-
-* * *
-
+The best and fastest way to get replies is to join our [Discord server](https://discord.gg/S5nffJbuvA).
 
 [![BHsponser](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_promo.webp)](https://bisecthosting.com/moogsmods)
