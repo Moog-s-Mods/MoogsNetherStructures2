@@ -1,4 +1,6 @@
 {
+  "name": "mns:leafy_rubble_start_pool",
+
   "fallback": "minecraft:empty",
 
   "elements": [

@@ -1,4 +1,6 @@
 {
+  "name": "mns:ruined_portal_start_pool",
+
   "fallback": "minecraft:empty",
 
   "elements": [

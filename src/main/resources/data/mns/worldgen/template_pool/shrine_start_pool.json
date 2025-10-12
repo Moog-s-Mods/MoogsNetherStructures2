@@ -1,4 +1,6 @@
 {
+  "name": "mns:shrine_start_pool",
+
   "fallback": "minecraft:empty",
 
   "elements": [

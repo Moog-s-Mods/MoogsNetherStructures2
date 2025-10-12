@@ -1,4 +1,6 @@
 {
+  "name": "mns:sandy_skull_start_pool",
+
   "fallback": "minecraft:empty",
 
   "elements": [
