@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mns:nether_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "moogs_structures:advanced_random_spread",
+    "salt": 19046,
+    "spacing": 23,
+    "separation": 11
+  }
+}
