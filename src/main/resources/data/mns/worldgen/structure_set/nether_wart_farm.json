@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mns:nether_wart_farm",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "moogs_structures:advanced_random_spread",
+    "salt": 980467578,
+    "spacing": 23,
+    "separation": 11
+  }
+}
