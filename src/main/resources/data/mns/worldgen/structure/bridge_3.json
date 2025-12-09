@@ -8,10 +8,8 @@
 
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "LOWEST_LAND",
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+
   "cannot_spawn_in_liquid": false,
-  "terrain_height_radius_check": 2,
-  "allowed_terrain_height_range": 1,
   "y_allowance": {
     "min_y_allowed": 30,
     "max_y_allowed": 32

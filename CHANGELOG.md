@@ -1,8 +1,12 @@
-## MNS – Moog’s Nether Structures
-### Update 2.0.2 – Patchnote
+# Changelog
+2.0.4
+
+**Fixes:**
+- Fixed JSON parsing errors
+
+2.0.3
 
 **Added Structures:**
-
 ![alt text](https://i.imgur.com/WRHKrER.jpeg)
 
 **Bridges:**
@@ -18,6 +22,7 @@
 - crimson_lava_well
 - nether_tower
 - nether_wart_farm
+- large_house
 
 **Warped Houses:**
 - warped_house_1
