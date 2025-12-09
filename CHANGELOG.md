@@ -1,5 +1,5 @@
-## MNS – Moog’s Nether Structures
-### Patchnote
+# Changelog
+2.0.4
 
 **Added Structures:**
 
