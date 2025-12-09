@@ -110,10 +110,8 @@ Let's understand what each file type does and where it lives in the project.
   "size": 1,
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "HIGHEST_LAND",
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "cannot_spawn_in_liquid": true,
-  "terrain_height_radius_check": 1,
-  "allowed_terrain_height_range": 3,
+
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {
@@ -1068,10 +1066,7 @@ Let's walk through adding a new structure called "nether_tower" to the mod.
   "size": 1,
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "HIGHEST_LAND",
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "cannot_spawn_in_liquid": true,
-  "terrain_height_radius_check": 2,
-  "allowed_terrain_height_range": 4,
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {
@@ -1292,10 +1287,8 @@ A small shrine that spawns commonly on flat areas.
   "size": 1,
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "HIGHEST_LAND",
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "cannot_spawn_in_liquid": true,
-  "terrain_height_radius_check": 1,
-  "allowed_terrain_height_range": 3,
+
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {
@@ -1363,10 +1356,7 @@ A large fortress that spawns rarely and contains valuable loot.
   "size": 1,
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "HIGHEST_LAND",
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "cannot_spawn_in_liquid": true,
-  "terrain_height_radius_check": 5,
-  "allowed_terrain_height_range": 5,
   "step": "surface_structures",
   "terrain_adaptation": "beard_box",
   "start_height": {
@@ -1510,10 +1500,7 @@ A house that has 3 different designs that randomly spawn.
   "size": 1,
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "HIGHEST_LAND",
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "cannot_spawn_in_liquid": true,
-  "terrain_height_radius_check": 2,
-  "allowed_terrain_height_range": 4,
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {
@@ -1581,10 +1568,8 @@ A lava pool that spawns in valleys.
   "size": 1,
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "LOWEST_LAND",
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "cannot_spawn_in_liquid": true,
-  "terrain_height_radius_check": 1,
-  "allowed_terrain_height_range": 3,
+
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {
