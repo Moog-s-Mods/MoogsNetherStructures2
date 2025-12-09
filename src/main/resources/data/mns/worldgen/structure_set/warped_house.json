@@ -1,14 +1,15 @@
 {
   "structures": [
     {
-      "structure": "mns:warped_house_2",
+      "structure": "mns:warped_house",
       "weight": 1
     }
   ],
   "placement": {
     "type": "moogs_structures:advanced_random_spread",
-    "salt": 89752,
+    "salt": 87564752,
     "spacing": 42,
     "separation": 38
   }
 }
+
