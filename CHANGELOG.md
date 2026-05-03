@@ -1,20 +1,19 @@
 # Changelog
-2.0.3
 
-**Added Structures:**
+---
 
-![alt text](https://i.imgur.com/WRHKrER.jpeg)
+## [2.0.3] - 2024-01-12
 
-**Bridges:**
-- bridge_1
-- bridge_2
-- bridge_3
-- bridge_4
-- bridge_5
-- bridge_6
+### Added
+- Added new structures.
+  ![alt text](https://i.imgur.com/WRHKrER.jpeg)
 
-**Nether Structures:**
-- nether_tower
-- nether_wart_farm
+  **Bridges:**
+  - bridge_1
+  - bridge_2
+  - bridge_3
+  - bridge_4
+  - bridge_5
+  - bridge_6
 
-Enjoy!
+---

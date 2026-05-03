@@ -1,15 +1,18 @@
-* text eol=lf
-*.bat text eol=crlf
-*.patch text eol=lf
-*.java text eol=lf
-*.gradle text eol=crlf
-*.png binary
-*.gif binary
-*.exe binary
-*.dll binary
-*.jar binary
-*.lzma binary
-*.zip binary
-*.pyd binary
-*.cfg text eol=lf
-*.jks binary
+# Enforce LF line endings for files that need to run on Linux/macOS
+# or get parsed by regexes that assume \n (CHANGELOG.md, gradle.properties)
+*.sh         text eol=lf
+*.py         text eol=lf
+*.md         text eol=lf
+*.properties text eol=lf
+gradlew      text eol=lf
+
+# Windows-only files keep CRLF
+*.bat        text eol=crlf
+*.cmd        text eol=crlf
+
+# Treat NBT and binary asset files as binary
+*.nbt        binary
+*.png        binary
+*.jar        binary
+*.jpg        binary
+*.zip        binary
