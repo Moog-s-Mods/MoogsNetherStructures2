@@ -54,13 +54,14 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
+        with:
+          gradle-version: "8.13"
 
       - name: Build
         shell: bash
         run: |
           set -eo pipefail
-          chmod +x gradlew
-          ./gradlew build
+          gradle build
           echo "---- build/libs contents ----"
           ls -la build/libs/
 
@@ -101,8 +102,7 @@ jobs:
         shell: bash
         run: |
           set -eo pipefail
-          chmod +x gradlew
-          ./gradlew publishMods
+          gradle publishMods
         env:
           MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
