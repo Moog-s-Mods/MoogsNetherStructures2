@@ -8,6 +8,9 @@
 - Fixed very small nether brick ruins not generating correctly due to a misconfigured template pool
 - Replaced 1.21 blocks that don't exist in 1.20: copper trapdoors -> iron trapdoors, crafter -> crafting table, waxed oxidized copper bulb -> shroomlight
 - Empty barrels in nether structures now contain "empty" loot tables
+- Structures now spawn in modded nether biomes on Fabric and NeoForge.
+- Added direct support for Better Nether and Incendium biomes.
+- Improved terrain blending for larger structures.
 
 ---
 
