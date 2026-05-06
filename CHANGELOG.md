@@ -2,6 +2,15 @@
 
 ---
 
+## [2.0.4] - 2026-05-06
+
+### Fixed
+- Fixed very small nether brick ruins not generating correctly due to a misconfigured template pool
+- Replaced 1.21 blocks that don't exist in 1.20: copper trapdoors -> iron trapdoors, crafter -> crafting table, waxed oxidized copper bulb -> shroomlight
+- Empty barrels in nether structures now contain "empty" loot tables
+
+---
+
 ## [2.0.3] - 2024-01-12
 
 ### Added
