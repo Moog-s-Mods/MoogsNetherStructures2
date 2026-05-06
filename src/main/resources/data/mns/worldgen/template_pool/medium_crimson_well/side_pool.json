@@ -1,6 +1,5 @@
 {
   "name": "mns:medium_crimson_well/side_pool",
-
   "fallback": "minecraft:empty",
   "elements": [
     {

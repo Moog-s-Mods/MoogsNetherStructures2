@@ -1,6 +1,5 @@
 {
   "name": "mns:warped_pool/side_pool",
-
   "fallback": "minecraft:empty",
   "elements": [
     {
