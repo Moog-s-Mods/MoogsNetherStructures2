@@ -81,6 +81,10 @@ jobs:
       - name: Post Discord Banner
         shell: bash
         run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "DISCORD_WEBHOOK not set, skipping."
+            exit 0
+          fi
           BANNER_URL=$(grep 'discordBannerUrl=' gradle.properties | cut -d'=' -f2)
           ROLE_ID=$(grep 'discordRoleId=' gradle.properties | cut -d'=' -f2)
           AVATAR_URL=$(grep 'discordAvatarUrl=' gradle.properties | cut -d'=' -f2)
