@@ -5,7 +5,7 @@
 ## [2.0.4] - 2026-05-06
 
 ### Added
-- Empty barrels in nether structures now contain a few scraps — string, cobwebs, bones, and the like.
+- Empty barrels in nether structures now contain loot
 - Structures now spawn in modded nether biomes on Fabric and NeoForge.
 - Added direct support for Better Nether and Incendium biomes.
 
