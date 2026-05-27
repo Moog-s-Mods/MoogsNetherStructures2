@@ -86,6 +86,24 @@
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "mns:mega_fortress/forks/roofed_fork_main_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "mns:mega_fortress/forks/roofed_fork_main_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
     }
   ]
 }

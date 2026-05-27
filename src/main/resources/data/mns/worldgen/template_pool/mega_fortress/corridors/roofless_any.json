@@ -12,7 +12,7 @@
         "mirror": "NONE",
         "enhanced_terrain_adaptation": {
           "kernel_size": 16,
-          "kernel_distance": 8,
+          "kernel_distance": 5,
           "top": "carve",
           "bottom": "carve",
           "band": {
@@ -32,7 +32,7 @@
         "mirror": "NONE",
         "enhanced_terrain_adaptation": {
           "kernel_size": 16,
-          "kernel_distance": 8,
+          "kernel_distance": 5,
           "top": "carve",
           "bottom": "carve",
           "band": {
@@ -70,7 +70,7 @@
         "mirror": "NONE",
         "enhanced_terrain_adaptation": {
           "kernel_size": 16,
-          "kernel_distance": 8,
+          "kernel_distance": 5,
           "top": "carve",
           "bottom": "carve",
           "band": {
@@ -171,7 +171,7 @@
         "mirror": "NONE",
         "enhanced_terrain_adaptation": {
           "kernel_size": 16,
-          "kernel_distance": 8,
+          "kernel_distance": 5,
           "top": "carve",
           "bottom": "carve",
           "band": {
@@ -191,7 +191,7 @@
         "mirror": "NONE",
         "enhanced_terrain_adaptation": {
           "kernel_size": 16,
-          "kernel_distance": 8,
+          "kernel_distance": 5,
           "top": "carve",
           "bottom": "carve",
           "band": {
