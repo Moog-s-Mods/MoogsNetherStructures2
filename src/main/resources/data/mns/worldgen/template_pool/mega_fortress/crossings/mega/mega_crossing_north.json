@@ -5,10 +5,21 @@
     {
       "weight": 1,
       "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
         "location": "mns:mega_fortress/start/mega_crossing_north_straight_1",
         "processors": "mns:pillars",
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve",
+          "band": {
+            "bottom": 30,
+            "top": 36
+          }
+        }
       }
     }
   ]
