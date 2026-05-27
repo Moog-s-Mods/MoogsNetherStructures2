@@ -1,0 +1,241 @@
+{
+  "name": "mns:mega_fortress/corridors/roofless_any",
+  "fallback": "mns:mega_fortress/ends/roofless_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/spawners/spawner_end_1",
+        "processors": "mns:pillars_blaze",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve",
+          "band": {
+            "bottom": 17,
+            "top": 23
+          }
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/spawners/spawner_side_1",
+        "processors": "mns:pillars_blaze",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve",
+          "band": {
+            "bottom": 17,
+            "top": 23
+          }
+        }
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "mns:mega_fortress/corridors/halfroofed_straight_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "mns:mega_fortress/crossings/small/small_crossing_west_straight_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/crossings/medium/medium_crossing_north_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve",
+          "band": {
+            "bottom": 17,
+            "top": 23
+          }
+        }
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "mns:mega_fortress/crossings/large/large_crossing_west_straight_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "mns:mega_fortress/corridors/roofless_single_straight_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "mns:mega_fortress/staircases/staircase_lower_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "mns:mega_fortress/staircases/staircase_lower_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "mns:mega_fortress/forks/roofless_fork_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "mns:mega_fortress/forks/roofless_fork_main_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "mns:mega_fortress/forks/roofless_fork_main_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "mns:mega_fortress/forks/roofless_fork_main_3",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "mns:mega_fortress/forks/roofless_fork_main_4",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/corners/corner_roofless_1_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve",
+          "band": {
+            "bottom": 17,
+            "top": 23
+          }
+        }
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/corners/corner_roofless_1_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve",
+          "band": {
+            "bottom": 17,
+            "top": 23
+          }
+        }
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "mns:mega_fortress/crossings/small/small_crossing_west_straight_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "mns:mega_fortress/corridors/roofless_single_straight_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "mns:mega_fortress/corridors/roofless_single_straight_3",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 9,
+      "element": {
+        "location": "mns:mega_fortress/corridors/roofless_single_straight_4",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

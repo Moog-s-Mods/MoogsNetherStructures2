@@ -1,0 +1,84 @@
+{
+  "name": "mns:mega_fortress/mobs/mob_any",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/fortress_guard",
+        "locations": {
+          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/fortress_guard",
+          "1.21.5-26.1.2": "mns:mega_fortress/mobs/fortress_guard"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/fortress_archer",
+        "locations": {
+          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/fortress_archer",
+          "1.21.5-26.1.2": "mns:mega_fortress/mobs/fortress_archer"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/black_guard",
+        "locations": {
+          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/black_guard",
+          "1.21.5-26.1.2": "mns:mega_fortress/mobs/black_guard"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/blaze_sentinel",
+        "locations": {
+          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/blaze_sentinel",
+          "1.21.5-26.1.2": "mns:mega_fortress/mobs/blaze_sentinel"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/fortress_champion",
+        "locations": {
+          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/fortress_champion",
+          "1.21.5-26.1.2": "mns:mega_fortress/mobs/fortress_champion"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/warden_of_the_keep",
+        "locations": {
+          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/warden_of_the_keep",
+          "1.21.5-26.1.2": "mns:mega_fortress/mobs/warden_of_the_keep"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

@@ -2,9 +2,16 @@
 
 ---
 
-## [2.1.1] - 2026-05-22
+## [3.0.0] - 2026-05-27
 
-_Pending. Update this header date and replace this line with the actual changes before tagging._
+Adds the Mega Fortress and requires Moog's Structure Lib 3.0.0 or newer.
+
+### Added
+- **Mega Fortress** — a large new nether structure assembled from a jigsaw layout: roofed and roofless corridors, crossings from small up to mega, forks, corners, staircases, a raised upper level, dedicated spawner rooms, and matching dead-end caps.
+- **Fortress garrison** — themed inhabitants including fortress guards, archers, black guards, blaze sentinels, champions, and a warden of the keep.
+
+### Changed
+- Now requires Moog's Structure Lib **3.0.0** or newer.
 
 ---
 

@@ -1,0 +1,19 @@
+{
+  "name": "mns:mega_fortress/mobs/fortress_guard",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/fortress_guard",
+        "locations": {
+          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/fortress_guard",
+          "1.21.5-26.1.2": "mns:mega_fortress/mobs/fortress_guard"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}
