@@ -12,7 +12,7 @@
         "mirror": "NONE",
         "enhanced_terrain_adaptation": {
           "kernel_size": 46,
-          "kernel_distance": 12,
+          "kernel_distance": 7,
           "top": "carve",
           "bottom": "carve",
           "padding": {

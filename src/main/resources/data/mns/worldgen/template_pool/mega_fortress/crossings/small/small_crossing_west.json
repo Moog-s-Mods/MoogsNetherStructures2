@@ -9,17 +9,7 @@
         "location": "mns:mega_fortress/crossings/small/small_crossing_center_1",
         "processors": "mns:pillars",
         "projection": "rigid",
-        "mirror": "NONE",
-        "enhanced_terrain_adaptation": {
-          "kernel_size": 16,
-          "kernel_distance": 8,
-          "top": "carve",
-          "bottom": "carve",
-          "band": {
-            "bottom": 17,
-            "top": 23
-          }
-        }
+        "mirror": "NONE"
       }
     }
   ]

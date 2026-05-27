@@ -9,17 +9,7 @@
         "location": "mns:mega_fortress/crossings/medium/medium_crossing_south_2",
         "processors": "mns:pillars",
         "projection": "rigid",
-        "mirror": "NONE",
-        "enhanced_terrain_adaptation": {
-          "kernel_size": 16,
-          "kernel_distance": 8,
-          "top": "carve",
-          "bottom": "carve",
-          "band": {
-            "bottom": 17,
-            "top": 23
-          }
-        }
+        "mirror": "NONE"
       }
     },
     {
@@ -29,17 +19,7 @@
         "location": "mns:mega_fortress/crossings/medium/medium_crossing_west_2",
         "processors": "mns:pillars",
         "projection": "rigid",
-        "mirror": "NONE",
-        "enhanced_terrain_adaptation": {
-          "kernel_size": 16,
-          "kernel_distance": 8,
-          "top": "carve",
-          "bottom": "carve",
-          "band": {
-            "bottom": 17,
-            "top": 23
-          }
-        }
+        "mirror": "NONE"
       }
     }
   ]
