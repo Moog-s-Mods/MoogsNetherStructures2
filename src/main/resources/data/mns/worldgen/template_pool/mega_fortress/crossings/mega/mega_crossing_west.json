@@ -5,11 +5,10 @@
     {
       "weight": 1,
       "element": {
-        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:mega_fortress/start/mega_crossing_west_straight_1",
         "processors": "mns:pillars",
         "projection": "rigid",
-        "mirror": "NONE",
         "enhanced_terrain_adaptation": {
           "kernel_size": 16,
           "kernel_distance": 8,
@@ -19,6 +18,11 @@
             "bottom": 30,
             "top": 36
           }
+        },
+        "locations": {
+          "1.21-1.21.8": "mns:mega_fortress/start/mega_crossing_west_straight_1",
+          "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/start/mega_crossing_west_straight_1",
+          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/start/mega_crossing_west_straight_1"
         }
       }
     }
