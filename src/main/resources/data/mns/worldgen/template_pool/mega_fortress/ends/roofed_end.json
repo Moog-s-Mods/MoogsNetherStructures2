@@ -1,0 +1,42 @@
+{
+  "name": "mns:mega_fortress/ends/roofed_end",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/ends/roofed_end_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/ends/roofed_end_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/ends/roofed_end_3",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/ends/roofed_end_4",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

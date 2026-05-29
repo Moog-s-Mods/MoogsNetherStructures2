@@ -1,0 +1,16 @@
+{
+  "name": "mns:mega_fortress/crossings/small/small_crossing_west",
+  "fallback": "mns:mega_fortress/ends/junction_ends/junction_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/crossings/small/small_crossing_center_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE"
+      }
+    }
+  ]
+}

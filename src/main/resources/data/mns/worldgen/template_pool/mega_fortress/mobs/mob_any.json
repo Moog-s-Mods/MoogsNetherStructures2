@@ -1,0 +1,51 @@
+{
+  "name": "mns:mega_fortress/mobs/mob_any",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "location": "mns:mega_fortress/mobs/fortress_guard",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "mns:mega_fortress/mobs/fortress_archer",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "mns:mega_fortress/mobs/black_guard",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "mns:mega_fortress/mobs/blaze_sentinel",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/fortress_champion",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

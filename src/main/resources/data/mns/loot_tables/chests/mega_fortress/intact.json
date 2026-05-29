@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": { "min": 4, "max": 7 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:gold_ingot", "weight": 20 },
+        { "type": "minecraft:item", "name": "minecraft:iron_ingot", "weight": 20 },
+        { "type": "minecraft:item", "name": "minecraft:nether_brick", "weight": 30 },
+        { "type": "minecraft:item", "name": "minecraft:quartz", "weight": 15 },
+        { "type": "minecraft:item", "name": "minecraft:golden_horse_armor", "weight": 5 },
+        { "type": "minecraft:item", "name": "minecraft:iron_horse_armor", "weight": 5 },
+        { "type": "minecraft:item", "name": "minecraft:saddle", "weight": 8 }
+      ]
+    },
+    {
+      "rolls": { "min": 5, "max": 9 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:bread", "weight": 20 },
+        { "type": "minecraft:item", "name": "minecraft:golden_carrot", "weight": 15 },
+        { "type": "minecraft:item", "name": "minecraft:coal", "weight": 25 },
+        { "type": "minecraft:item", "name": "minecraft:torch", "weight": 25 },
+        { "type": "minecraft:item", "name": "minecraft:flint_and_steel", "weight": 10 },
+        { "type": "minecraft:item", "name": "minecraft:chainmail_helmet", "weight": 5 }
+      ]
+    }
+  ]
+}

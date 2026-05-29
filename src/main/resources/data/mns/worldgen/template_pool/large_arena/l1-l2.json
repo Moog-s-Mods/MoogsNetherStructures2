@@ -1,0 +1,15 @@
+{
+  "name": "mns:large_arena/l1-l2",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:large_arena/l2",
+        "processors": "mns:arena_pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "mns:mega_fortress/crossings/medium/medium_crossing_south_2",
+  "fallback": "mns:mega_fortress/ends/junction_ends/junction_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:mega_fortress/crossings/medium/medium_crossing_south_2",
+        "processors": "mns:pillars",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:mega_fortress/crossings/medium/medium_crossing_west_2",
+        "processors": "mns:pillars",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

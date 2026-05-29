@@ -1,0 +1,15 @@
+{
+  "name": "mns:mega_fortress/mobs/blaze_sentinel",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/mobs/blaze_sentinel",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

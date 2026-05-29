@@ -1,0 +1,15 @@
+{
+  "name": "mns:mega_fortress/crossings/small/lower/small_crossing_lower",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/crossings/small/lower/small_crossing_center_lower_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

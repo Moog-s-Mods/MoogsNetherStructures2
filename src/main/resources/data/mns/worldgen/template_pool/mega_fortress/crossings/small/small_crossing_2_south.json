@@ -1,0 +1,15 @@
+{
+  "name": "mns:mega_fortress/crossings/small/small_crossing_2_south",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/crossings/small/small_crossing_south_straight_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

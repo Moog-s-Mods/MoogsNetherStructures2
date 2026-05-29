@@ -1,0 +1,15 @@
+{
+  "name": "mns:mega_fortress/crossings/small/small_crossing_south",
+  "fallback": "mns:mega_fortress/ends/junction_ends/junction_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/crossings/small/small_crossing_south_straight_1",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

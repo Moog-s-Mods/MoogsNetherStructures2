@@ -1,0 +1,25 @@
+{
+  "name": "mns:mega_fortress/crossings/mega/mega_crossing_east",
+  "fallback": "mns:mega_fortress/ends/junction_ends/junction_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:mega_fortress/start/mega_crossing_east_straight_1",
+        "processors": "mns:pillars_armored",
+        "projection": "rigid",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve",
+          "band": {
+            "bottom": 30,
+            "top": 36
+          }
+        }
+      }
+    }
+  ]
+}
