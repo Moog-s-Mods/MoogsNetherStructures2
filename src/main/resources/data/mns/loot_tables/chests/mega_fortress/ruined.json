@@ -107,10 +107,8 @@
               "only_compatible": true,
               "conditions": [
                 {
-                  "condition": "minecraft:random_chance_with_enchanted_bonus",
-                  "unenchanted_chance": 1,
-                  "enchanted_chance": 2,
-                  "enchantment": "minecraft:unbreaking"
+                  "condition": "minecraft:random_chance",
+                  "chance": 1
                 }
               ]
             }
