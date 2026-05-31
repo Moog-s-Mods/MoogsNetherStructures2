@@ -285,6 +285,254 @@
           "bottom": "carve"
         }
       }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/straight_5",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/straight_6",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/straight_7",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/straight_8",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/small_junction_3",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/small_junction_4",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 45,
+      "element": {
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:mega_fortress/upper/pillar_straight_3",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        },
+        "locations": {
+          "1.21-1.21.8": "mns:mega_fortress/upper/pillar_straight_3",
+          "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/upper/pillar_straight_3",
+          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/upper/pillar_straight_3"
+        }
+      }
+    },
+    {
+      "weight": 45,
+      "element": {
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:mega_fortress/upper/pillar_straight_4",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        },
+        "locations": {
+          "1.21-1.21.8": "mns:mega_fortress/upper/pillar_straight_4",
+          "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/upper/pillar_straight_4",
+          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/upper/pillar_straight_4"
+        }
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/corner_3",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 8,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/corner_4",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/small_crossing_2",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/end_5",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/end_6",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/end_7",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "moogs_structures:mirroring_single_pool_element",
+        "location": "mns:mega_fortress/upper/end_8",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "mirror": "NONE",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 16,
+          "kernel_distance": 8,
+          "top": "carve",
+          "bottom": "carve"
+        }
+      }
     }
   ]
 }

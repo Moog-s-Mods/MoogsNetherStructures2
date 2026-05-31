@@ -1,0 +1,20 @@
+{
+  "name": "mns:mega_fortress/corners/corner_roofless_3",
+  "fallback": "mns:mega_fortress/ends/junction_ends/junction_end",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_fortress/corners/corner_roofless_2_3",
+        "processors": "mns:pillars",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "locations": {
+          "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofless_2_3",
+          "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofless_2_3",
+          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_2_3"
+        }
+      }
+    }
+  ]
+}
