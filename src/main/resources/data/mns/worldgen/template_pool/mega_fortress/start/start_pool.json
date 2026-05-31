@@ -17,6 +17,10 @@
           "padding": {
             "bottom": 4
           }
+        },
+        "locations": {
+          "1.20-1.20.4": "mns:mega_fortress/start/mega_crossing_center_1",
+          "1.20.5-1.20.6": "mns:v1_20_5/mega_fortress/start/mega_crossing_center_1"
         }
       }
     }
