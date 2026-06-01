@@ -13,6 +13,7 @@ Adds the Mega Fortress and Large Arena, and requires Moog's Structure Lib 3.0.0 
 
 ### Changed
 - Now requires Moog's Structure Lib **3.0.0** or newer.
+- **Structure density** - merged 5 groups of variant structures into shared weighted sets, reducing overall nether structure density.
 
 ---
 
