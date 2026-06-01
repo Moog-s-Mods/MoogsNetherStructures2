@@ -7,11 +7,12 @@
 Adds the Mega Fortress and requires Moog's Structure Lib 3.0.0 or newer.
 
 ### Added
-- **Mega Fortress** — a large new nether structure assembled from a jigsaw layout: roofed and roofless corridors, crossings from small up to mega, forks, corners, staircases, a raised upper level, dedicated spawner rooms, and matching dead-end caps.
-- **Fortress garrison** — themed inhabitants including fortress guards, archers, black guards, blaze sentinels, champions, and a warden of the keep.
+- **Mega Fortress** - a large new nether structure assembled from a jigsaw layout: roofed and roofless corridors, crossings from small up to mega, forks, corners, staircases, a raised upper level, dedicated spawner rooms, and matching dead-end caps.
+- **Fortress garrison** - themed inhabitants including fortress guards, archers, black guards, blaze sentinels, champions, and a warden of the keep.
 
 ### Changed
 - Now requires Moog's Structure Lib **3.0.0** or newer.
+- **Structure density** - merged 5 groups of variant structures into shared weighted sets, reducing overall nether structure density.
 
 ---
 
