@@ -10,12 +10,16 @@
       "element": {
 
         "location": "mns:crimson_forge",
+        "locations": {
+          "1.21-1.21.4": "mns:crimson_forge",
+          "1.21.5-26.1.2": "mns:v1_21_5/crimson_forge"
+        },
 
         "processors": "minecraft:empty",
 
         "projection": "rigid",
 
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
   ]

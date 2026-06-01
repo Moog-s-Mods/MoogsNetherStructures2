@@ -10,7 +10,8 @@
         "projection": "rigid",
         "element_type": "moogs_structures:versioned_single_pool_element",
         "locations": {
-          "1.21-1.21.8": "mns:mega_fortress/crossings/small/lower/small_crossing_east_lower_1",
+          "1.21-1.21.4": "mns:mega_fortress/crossings/small/lower/small_crossing_east_lower_1",
+          "1.21.5-1.21.8": "mns:mega_fortress/v1_21_5/crossings/small/lower/small_crossing_east_lower_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/crossings/small/lower/small_crossing_east_lower_1",
           "26.1-26.1.2": "mns:mega_fortress/v1_21_9/crossings/small/lower/small_crossing_east_lower_1"
         }
