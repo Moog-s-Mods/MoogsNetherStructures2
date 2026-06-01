@@ -1,0 +1,15 @@
+{
+  "name": "mns:small_arena/left",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "mns:small_arena/left",
+        "processors": "mns:small_arena_spawners",
+        "projection": "rigid"
+      }
+    }
+  ]
+}
