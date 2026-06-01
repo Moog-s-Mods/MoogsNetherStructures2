@@ -3,6 +3,10 @@
     {
       "structure": "mns:shrine",
       "weight": 1
+    },
+    {
+      "structure": "mns:smoking_shrine",
+      "weight": 1
     }
   ],
   "placement": {
