@@ -1,0 +1,19 @@
+{
+  "name": "mns:mega_arenas/mobs/arena_bowman",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:mega_arenas/mobs/arena_bowman",
+        "locations": {
+          "1.20-1.20.4": "mns:mega_arenas/mobs/arena_bowman",
+          "1.20.5-1.20.6": "mns:v1_20_5/mega_arenas/mobs/arena_bowman"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

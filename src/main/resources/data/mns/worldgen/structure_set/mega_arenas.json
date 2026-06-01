@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "mns:small_arena",
+      "weight": 5
+    },
+    {
+      "structure": "mns:large_arena",
+      "weight": 3
+    },
+    {
+      "structure": "mns:dragon_arena",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "moogs_structures:advanced_random_spread",
+    "salt": 472859103,
+    "spacing": 150,
+    "separation": 100
+  }
+}

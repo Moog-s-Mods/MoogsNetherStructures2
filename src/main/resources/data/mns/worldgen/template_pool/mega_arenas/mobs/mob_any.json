@@ -1,0 +1,45 @@
+{
+  "name": "mns:mega_arenas/mobs/mob_any",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "mns:mega_arenas/mobs/arena_bowman",
+        "locations": {
+          "1.20-1.20.4": "mns:mega_arenas/mobs/arena_bowman",
+          "1.20.5-1.20.6": "mns:v1_20_5/mega_arenas/mobs/arena_bowman"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "mns:mega_arenas/mobs/pit_vanguard",
+        "locations": {
+          "1.20-1.20.4": "mns:mega_arenas/mobs/pit_vanguard",
+          "1.20.5-1.20.6": "mns:v1_20_5/mega_arenas/mobs/pit_vanguard"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "mns:mega_arenas/mobs/ember_sentinel",
+        "locations": {
+          "1.20-1.20.4": "mns:mega_arenas/mobs/ember_sentinel",
+          "1.20.5-1.20.6": "mns:v1_20_5/mega_arenas/mobs/ember_sentinel"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}
