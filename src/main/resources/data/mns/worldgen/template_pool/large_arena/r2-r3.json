@@ -5,10 +5,10 @@
     {
       "weight": 1,
       "element": {
+        "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:large_arena/r3",
         "processors": "mns:arena_pillars",
         "projection": "rigid",
-        "element_type": "moogs_structures:versioned_single_pool_element",
         "locations": {
           "1.20-1.20.4": "mns:large_arena/r3",
           "1.20.5-1.20.6": "mns:v1_20_5/large_arena/r3"
