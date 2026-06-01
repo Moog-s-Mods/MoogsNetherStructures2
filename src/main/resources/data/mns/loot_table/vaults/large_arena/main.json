@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:vault",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:diamond_sword", "weight": 3,
+          "functions": [ { "function": "minecraft:enchant_randomly" } ] },
+        { "type": "minecraft:item", "name": "minecraft:diamond_chestplate", "weight": 3,
+          "functions": [ { "function": "minecraft:enchant_randomly" } ] },
+        { "type": "minecraft:item", "name": "minecraft:diamond_leggings", "weight": 3,
+          "functions": [ { "function": "minecraft:enchant_randomly" } ] },
+        { "type": "minecraft:item", "name": "minecraft:bow", "weight": 3,
+          "functions": [ { "function": "minecraft:enchant_randomly" } ] },
+        { "type": "minecraft:item", "name": "minecraft:diamond", "weight": 5,
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:gold_ingot", "weight": 5,
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 4, "max": 8 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:iron_ingot", "weight": 4,
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 4, "max": 8 } } ] },
+        { "type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 3 },
+        { "type": "minecraft:item", "name": "minecraft:totem_of_undying", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:book", "weight": 2,
+          "functions": [ { "function": "minecraft:enchant_randomly" } ] },
+        { "type": "minecraft:item", "name": "minecraft:music_disc_mall", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:music_disc_mellohi", "weight": 1 }
+      ]
+    }
+  ],
+  "random_sequence": "mns:vaults/large_arena/main"
+}
