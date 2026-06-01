@@ -1,0 +1,17 @@
+{
+  "simultaneous_mobs": 4.0,
+  "simultaneous_mobs_added_per_player": 1.0,
+  "total_mobs": 14.0,
+  "total_mobs_added_per_player": 2.0,
+  "ticks_between_spawn": 30,
+  "spawn_potentials": [
+    { "weight": 4, "data": { "entity": { "id": "minecraft:wither_skeleton" } } },
+    { "weight": 3, "data": { "entity": { "id": "minecraft:blaze" } } },
+    { "weight": 3, "data": { "entity": { "id": "minecraft:piglin_brute" } } },
+    { "weight": 2, "data": { "entity": { "id": "minecraft:breeze" } } }
+  ],
+  "loot_tables_to_eject": [
+    { "data": "mns:spawners/dragon_arena/trial_reward_key_ominous", "weight": 1 },
+    { "data": "mns:spawners/dragon_arena/trial_reward_consumables_ominous", "weight": 2 }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:ominous_trial_key" }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:ominous_bottle", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:tipped_arrow", "weight": 3,
+          "functions": [
+            { "function": "minecraft:set_potion", "id": "minecraft:strength" },
+            { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 6, "max": 10 } }
+          ] },
+        { "type": "minecraft:item", "name": "minecraft:splash_potion", "weight": 2,
+          "functions": [ { "function": "minecraft:set_potion", "id": "minecraft:strong_regeneration" } ] }
+      ]
+    }
+  ],
+  "random_sequence": "mns:spawners/dragon_arena/trial_reward_key_ominous"
+}
