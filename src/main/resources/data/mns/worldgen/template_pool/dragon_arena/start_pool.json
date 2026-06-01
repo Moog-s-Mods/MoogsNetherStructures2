@@ -1,0 +1,15 @@
+{
+  "name": "mns:dragon_arena/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:dragon_arena/head",
+        "processors": "mns:dragon_arena_pillars",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
