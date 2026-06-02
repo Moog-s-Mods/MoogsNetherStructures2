@@ -6,7 +6,7 @@
   "ticks_between_spawn": 30,
   "spawn_potentials": [
     {
-      "weight": 4,
+      "weight": 7,
       "data": {
         "entity": {
           "id": "minecraft:wither_skeleton"
@@ -18,14 +18,6 @@
       "data": {
         "entity": {
           "id": "minecraft:blaze"
-        }
-      }
-    },
-    {
-      "weight": 3,
-      "data": {
-        "entity": {
-          "id": "minecraft:piglin_brute"
         }
       }
     },

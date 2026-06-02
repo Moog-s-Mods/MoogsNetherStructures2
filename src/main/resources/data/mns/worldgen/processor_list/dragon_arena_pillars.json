@@ -41,10 +41,18 @@
     {
       "processor_type": "moogs_structures:spawner_randomizing_processor",
       "weighted_entities": [
-        { "entity": "minecraft:wither_skeleton", "weight": 4 },
-        { "entity": "minecraft:blaze", "weight": 3 },
-        { "entity": "minecraft:piglin_brute", "weight": 2 },
-        { "entity": "minecraft:magma_cube", "weight": 3 }
+        {
+          "entity": "minecraft:wither_skeleton",
+          "weight": 6
+        },
+        {
+          "entity": "minecraft:blaze",
+          "weight": 3
+        },
+        {
+          "entity": "minecraft:magma_cube",
+          "weight": 3
+        }
       ],
       "min_spawn_delay": 150,
       "max_spawn_delay": 600,
