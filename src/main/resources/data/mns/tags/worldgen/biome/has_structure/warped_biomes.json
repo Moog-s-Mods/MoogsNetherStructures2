@@ -4,7 +4,6 @@
   "values": [
     "minecraft:warped_forest",
     { "id": "#c:nether_forests", "required": false },
-    { "id": "#c:is_nether_forest", "required": false },
     { "id": "betternether:old_warped_woods", "required": false },
     { "id": "betternether:upside_down_forest", "required": false },
     { "id": "betternether:upside_down_forest_cleared", "required": false },
