@@ -58,6 +58,7 @@ ARENAS = [
     "large_arena",
     "dragon_arena",
     "mega_arenas/mobs",
+    "mega_fortress/mobs",
 ]
 
 # A piece is "item-bearing" if it has hard-coded ItemStacks that need
@@ -73,7 +74,45 @@ ITEM_BEARING_RELS = {
     "mega_arenas/mobs/ember_sentinel.nbt",
     "mega_arenas/mobs/pit_brute.nbt",
     "mega_arenas/mobs/pit_vanguard.nbt",
+    "mega_fortress/mobs/black_guard.nbt",
+    "mega_fortress/mobs/blaze_sentinel.nbt",
+    "mega_fortress/mobs/fortress_archer.nbt",
+    "mega_fortress/mobs/fortress_champion.nbt",
+    "mega_fortress/mobs/fortress_guard.nbt",
+    "mega_fortress/mobs/warden_of_the_keep.nbt",
 }
+
+# Attribute id translation: 1.20.5+ has dropped the `generic.` namespace
+# segment; 1.20.0-1.20.4 used `minecraft:generic.<name>` (and per-mob
+# namespaces like `minecraft:zombie.spawn_reinforcements`). Map each
+# 1.20.5+ id back to the 1.20.4 form. Attributes not in this map are
+# stripped from the legacy NBT (they don't exist on 1.20.4).
+LEGACY_ATTRIBUTE_NAMES = {
+    "minecraft:max_health":         "minecraft:generic.max_health",
+    "minecraft:follow_range":       "minecraft:generic.follow_range",
+    "minecraft:knockback_resistance":"minecraft:generic.knockback_resistance",
+    "minecraft:movement_speed":     "minecraft:generic.movement_speed",
+    "minecraft:flying_speed":       "minecraft:generic.flying_speed",
+    "minecraft:attack_damage":      "minecraft:generic.attack_damage",
+    "minecraft:attack_knockback":   "minecraft:generic.attack_knockback",
+    "minecraft:attack_speed":       "minecraft:generic.attack_speed",
+    "minecraft:armor":              "minecraft:generic.armor",
+    "minecraft:armor_toughness":    "minecraft:generic.armor_toughness",
+    "minecraft:luck":               "minecraft:generic.luck",
+    "minecraft:spawn_reinforcements":"minecraft:zombie.spawn_reinforcements",
+    "minecraft:jump_strength":      "minecraft:horse.jump_strength",
+}
+
+# Modifier operation enum→int (pre-1.20.5).
+LEGACY_MODIFIER_OP = {
+    "add_value": 0,
+    "add_multiplied_base": 1,
+    "add_multiplied_total": 2,
+}
+
+# Attributes that exist on 1.20.5/1.20.6 — used to filter the v1_20_5
+# mirror's attributes list (drop 1.21-only ones like oxygen_bonus).
+ATTRS_OK_ON_1_20_5 = set(LEGACY_ATTRIBUTE_NAMES.keys())
 
 # Palette substitution map.
 PALETTE_SUBS = {
@@ -91,9 +130,7 @@ def arena_of_rel(rel):
 
 # --- Item translation: components shape -> legacy tag shape -----------
 DROP_COMPONENTS_SILENTLY = {
-    "minecraft:custom_name",
     "minecraft:item_name",
-    "minecraft:lore",
     "minecraft:rarity",
     "minecraft:custom_data",
     "minecraft:item_model",
@@ -111,6 +148,37 @@ DROP_COMPONENTS_SILENTLY = {
 }
 
 
+def _component_to_json_str(comp):
+    """Recursively turn an NBT chat-component Compound into a plain Python
+    dict suitable for json.dumps. NBT Bytes are converted to bool for
+    fields known to be boolean (bold/italic/underlined/strikethrough/obfuscated).
+    """
+    BOOL_KEYS = {"bold", "italic", "underlined", "strikethrough", "obfuscated"}
+    if isinstance(comp, Compound):
+        out = {}
+        for k, v in comp.items():
+            k = str(k)
+            if isinstance(v, (Compound, list)):
+                out[k] = _component_to_json_str(v)
+            elif isinstance(v, Byte) and k in BOOL_KEYS:
+                out[k] = bool(int(v))
+            elif isinstance(v, (Byte, Short, Int, Long)):
+                out[k] = int(v)
+            elif isinstance(v, (Float, Double)):
+                out[k] = float(v)
+            else:
+                out[k] = str(v)
+        return out
+    if isinstance(comp, list):
+        return [_component_to_json_str(x) for x in comp]
+    return str(comp)
+
+
+def component_to_json(comp):
+    """Compound chat component -> JSON string for legacy CustomName / Lore."""
+    return json.dumps(_component_to_json_str(comp), ensure_ascii=False)
+
+
 def stack_components_to_legacy(stack):
     """Translate one ItemStack from 1.20.5+ components shape to legacy
     (1.20.0-1.20.4) tag-based shape. Returns a fresh Compound.
@@ -125,6 +193,7 @@ def stack_components_to_legacy(stack):
     if not isinstance(components, Compound) or len(components) == 0:
         return out
     tag = Compound()
+    display = Compound()  # collects custom_name + lore into tag.display
     for key, val in components.items():
         key = str(key)
         if key == "minecraft:potion_contents":
@@ -184,20 +253,98 @@ def stack_components_to_legacy(stack):
                     )
             if entries:
                 tag["StoredEnchantments"] = List[Compound](entries)
+        elif key == "minecraft:custom_name":
+            # 1.20.4 stores item display name as tag.display.Name = JSON-string
+            display["Name"] = String(component_to_json(val))
+        elif key == "minecraft:lore":
+            # 1.20.4 stores lore as tag.display.Lore = List[String] of JSON-stringified components
+            lore_lines = []
+            if isinstance(val, list):
+                for line in val:
+                    lore_lines.append(String(component_to_json(line)))
+            tag["display"] = display  # set early so subsequent assignment is on the same compound
+            display["Lore"] = List[String](lore_lines)
+        elif key == "minecraft:damage":
+            # damage int -> tag.Damage Int
+            try:
+                tag["Damage"] = Int(int(val))
+            except Exception:
+                pass
         elif key in DROP_COMPONENTS_SILENTLY:
             pass
         else:
             # Unknown component — log loudly but don't crash; drop it.
             print(f"  WARN: dropping unknown component {key}", file=sys.stderr)
+    if len(display) > 0:
+        tag["display"] = display
     if len(tag) > 0:
         out["tag"] = tag
     return out
 
 
 # --- Entity translation: equipment compound -> legacy arrays ----------
+def _uuid_int_array_from(name):
+    """Deterministic UUID (IntArray[4]) from a name string. md5-derived."""
+    import hashlib
+    h = hashlib.md5(name.encode("utf-8")).digest()  # 16 bytes
+    ints = []
+    for i in range(4):
+        b = h[i*4:(i+1)*4]
+        v = int.from_bytes(b, "big", signed=True)
+        ints.append(Int(v))
+    return IntArray(ints)
+
+
+def _translate_attributes_to_legacy(attrs):
+    """`attributes` (1.20.5+ list of {id, base, modifiers}) -> legacy
+    `Attributes` list of {Name, Base, Modifiers:[{Name, Amount, Operation:Int, UUID:IntArray}]}.
+    Unknown / 1.21-only attribute ids are dropped.
+    """
+    out = []
+    for a in attrs:
+        if not isinstance(a, Compound):
+            continue
+        new_id = LEGACY_ATTRIBUTE_NAMES.get(str(a.get("id", "")))
+        if new_id is None:
+            continue  # attribute not on 1.20.4
+        entry = Compound()
+        entry["Name"] = String(new_id)
+        if "base" in a:
+            try:
+                entry["Base"] = Double(float(a["base"]))
+            except Exception:
+                pass
+        mods_in = a.get("modifiers")
+        if isinstance(mods_in, list):
+            mods_out = []
+            for m in mods_in:
+                if not isinstance(m, Compound):
+                    continue
+                op_str = str(m.get("operation", "add_value"))
+                op_int = LEGACY_MODIFIER_OP.get(op_str, 0)
+                mid = str(m.get("id", "minecraft:unknown"))
+                try:
+                    amount = float(m.get("amount", 0.0))
+                except Exception:
+                    amount = 0.0
+                mods_out.append(Compound({
+                    "Name": String(mid),
+                    "Amount": Double(amount),
+                    "Operation": Int(op_int),
+                    "UUID": _uuid_int_array_from(mid),
+                }))
+            if mods_out:
+                entry["Modifiers"] = List[Compound](mods_out)
+        out.append(entry)
+    return out
+
+
 def entity_components_to_legacy(entity):
-    """Mutate entity Compound in-place: equipment/drop_chances to legacy
-    arrays; strip attributes block (defaulted on 1.20.0-1.20.4).
+    """Mutate entity Compound in-place to 1.20.0-1.20.4 shape:
+    - equipment / drop_chances -> ArmorItems/HandItems + drop chances arrays
+    - attributes (lowercase) -> Attributes (capital A) with `minecraft:generic.*`
+      prefix mapping; modifiers translated with deterministic UUIDs
+    - CustomName Compound -> JSON-string
     """
     eq = entity.get("equipment", Compound())
     if not isinstance(eq, Compound):
@@ -230,12 +377,31 @@ def entity_components_to_legacy(entity):
     entity["HandDropChances"] = List[Float](hand_dc)
     entity["ArmorDropChances"] = List[Float](armor_dc)
 
+    # Attributes translation
+    if "attributes" in entity and isinstance(entity["attributes"], list):
+        legacy_attrs = _translate_attributes_to_legacy(entity["attributes"])
+        if legacy_attrs:
+            entity["Attributes"] = List[Compound](legacy_attrs)
+        del entity["attributes"]
+
+    # CustomName: Compound -> JSON-encoded String (1.20.x chat-component format)
+    if "CustomName" in entity and isinstance(entity["CustomName"], Compound):
+        entity["CustomName"] = String(component_to_json(entity["CustomName"]))
+
     if "equipment" in entity:
         del entity["equipment"]
     if "drop_chances" in entity:
         del entity["drop_chances"]
-    if "attributes" in entity:
-        del entity["attributes"]
+
+
+def filter_v1_20_5_entity(entity):
+    """For the v1_20_5/ mirror: strip 1.21-only attributes (oxygen_bonus etc.)
+    from the components-shape `attributes` list. Other fields kept as-is.
+    """
+    if "attributes" in entity and isinstance(entity["attributes"], list):
+        kept = [a for a in entity["attributes"]
+                if isinstance(a, Compound) and str(a.get("id", "")) in ATTRS_OK_ON_1_20_5]
+        entity["attributes"] = List[Compound](kept)
 
 
 # --- Block entity item-array translation (dispenser/dropper/chest/...) -
@@ -311,7 +477,10 @@ def rewrite_block_entities(root, vault_indices, trial_indices, arena_name, legac
 
 
 def translate_entities(root, legacy_items):
-    """If legacy_items=True, translate entity equipment + items."""
+    """If legacy_items=True, translate entity equipment + items + attributes
+    + CustomName to 1.20.0-1.20.4 shape. Otherwise (v1_20_5 mirror) just
+    strip 1.21-only attributes so the components-shape NBT loads cleanly.
+    """
     for e in root.get("entities", []):
         en = e.get("nbt")
         if not isinstance(en, Compound):
@@ -320,9 +489,13 @@ def translate_entities(root, legacy_items):
             # Item-frames: components-shape Item
             if "Item" in en and isinstance(en["Item"], Compound):
                 en["Item"] = stack_components_to_legacy(en["Item"])
-            # Living entities: equipment compound
-            if "equipment" in en or "drop_chances" in en or "attributes" in en:
+            # Living entities: equipment + attributes + CustomName
+            if ("equipment" in en or "drop_chances" in en or
+                "attributes" in en or
+                (isinstance(en.get("CustomName"), Compound))):
                 entity_components_to_legacy(en)
+        else:
+            filter_v1_20_5_entity(en)
 
 
 def fix_palette_default_states(palette):
