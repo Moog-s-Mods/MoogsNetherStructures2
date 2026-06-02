@@ -17,19 +17,34 @@ DV_COMPONENTS = 3837  # 1.20.5
 
 # Pre-1.20.5 → 1.20.5+ ItemStack translation.
 def _component_text_from_json_str(raw):
-    """raw is a NBT String containing JSON for a chat component.
-    Return a Compound representation suitable for components-shape pages/lore.
-    For pages in v1_20_5 we use {"raw": <plain text>} where possible.
+    """raw is a NBT String containing JSON for a chat component (legacy
+    pages[] entries are JSON-encoded chat components like
+    '{"text":"Hello\\nworld"}').
+
+    Return a Compound suitable for the 1.20.5/1.20.6 + 1.21.0-1.21.4
+    `minecraft:written_book_content` page format, which the strict
+    Component codec requires to be a JSON STRING LITERAL — i.e. raw is a
+    String whose content starts and ends with '"' and JSON-escapes the
+    inner text (newline -> \\n, backslash -> \\\\, quote -> \\").
+
+    Example canonical 1.20.6-saved page raw = '"hgrdrgt\\\\"'
+    (Python repr; actual NBT String = `"hgrdrgt\\"`, a JSON-encoded
+    string literal of `hgrdrgt\\`).
     """
     s = str(raw)
     try:
         parsed = json.loads(s)
     except Exception:
-        return Compound({"raw": String(s)})
+        # Treat as plain text; JSON-encode it.
+        return Compound({"raw": String(json.dumps(s, ensure_ascii=False))})
+    if isinstance(parsed, str):
+        # Already a JSON string literal — collapse and re-encode (idempotent).
+        return Compound({"raw": String(json.dumps(parsed, ensure_ascii=False))})
     if isinstance(parsed, dict) and "text" in parsed and len(parsed) <= 4:
-        # simple {"text": "..."} component — collapse to raw plain text
-        return Compound({"raw": String(str(parsed["text"]))})
-    # complex component — keep as JSON-encoded raw string
+        # Simple {"text":"..."} component — extract text, then JSON-encode.
+        return Compound({"raw": String(json.dumps(str(parsed["text"]), ensure_ascii=False))})
+    # Complex component (object with formatting) — keep as JSON-encoded
+    # component literal (no re-encoding needed).
     return Compound({"raw": String(s)})
 
 
@@ -45,10 +60,43 @@ def _enchant_list_to_map(ench_list):
     return out
 
 
+def _re_encode_pages_in_place(book_content):
+    """Idempotent re-encoder: ensures pages[*].raw is a JSON-encoded string
+    literal (matches canonical 1.20.6 codec)."""
+    pages = book_content.get("pages")
+    if not isinstance(pages, list):
+        return
+    new_pages = []
+    for p in pages:
+        if isinstance(p, Compound) and "raw" in p:
+            new_pages.append(_component_text_from_json_str(p["raw"]))
+        else:
+            new_pages.append(p)
+    book_content["pages"] = List[Compound](new_pages)
+
+
 def stack_legacy_to_components(stack):
-    """Mutate-free legacy → components-shape ItemStack. Returns a fresh Compound."""
+    """Legacy (tag.*) → components-shape ItemStack. Idempotent: if `stack`
+    is ALREADY in components shape, just re-encode pages in any
+    written_book_content (so we can safely re-run on an already-lifted file).
+    """
     if not isinstance(stack, Compound) or "id" not in stack:
         return Compound()
+
+    # Already components-shape? (has count or components, no Count/tag)
+    if ("count" in stack or "components" in stack) and "Count" not in stack and "tag" not in stack:
+        # Return a fresh deep-copy-ish Compound with pages re-encoded.
+        out = Compound()
+        for k, v in stack.items():
+            out[k] = v
+        comps = out.get("components")
+        if isinstance(comps, Compound):
+            wbc = comps.get("minecraft:written_book_content")
+            if isinstance(wbc, Compound):
+                _re_encode_pages_in_place(wbc)
+        return out
+
+    # Legacy path.
     out = Compound()
     out["id"] = stack["id"]
     out["count"] = Int(int(stack.get("Count", 1)))
