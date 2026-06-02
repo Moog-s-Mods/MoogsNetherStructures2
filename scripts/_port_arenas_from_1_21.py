@@ -114,9 +114,14 @@ LEGACY_MODIFIER_OP = {
 # mirror's attributes list (drop 1.21-only ones like oxygen_bonus).
 ATTRS_OK_ON_1_20_5 = set(LEGACY_ATTRIBUTE_NAMES.keys())
 
-# Palette substitution map.
+# Palette substitution map. Applied across the whole palette for every
+# ported NBT. `Properties` are preserved verbatim — only safe when the
+# new block accepts the same property keys (cobbled_deepslate_slab and
+# tuff_slab share `type` + `waterlogged`; minecraft:chain has the same
+# `axis` + `waterlogged` as iron_chain).
 PALETTE_SUBS = {
     "minecraft:tuff_slab": "minecraft:cobbled_deepslate_slab",
+    "minecraft:iron_chain": "minecraft:chain",  # 1.21.9 rename
 }
 
 # Returns the arena name (small_arena, large_arena, dragon_arena) for a
