@@ -51,8 +51,11 @@ tasks.processResources {
     filesMatching('pack.mcmeta') { expand(meta) }
 }
 
+def isAlpha = project.findProperty('alphaBuild')?.toString()?.toBoolean() ?: false
+def alphaSuffix = isAlpha ? '-alpha' : ''
+
 tasks.named('jar') {
-    archiveFileName = "${modName}-${mcVersion}-${project.version}.jar"
+    archiveFileName = "${modName}-${mcVersion}-${project.version}${alphaSuffix}.jar"
 }
 
 // Config datapack
@@ -60,7 +63,7 @@ tasks.named('jar') {
 // zip so players can download it and fine-tune our structure settings. Installed on top
 // of the mod, it overrides whichever of the mod's settings they have changed. The icon
 // is reused as the datapack's pack.png.
-def datapackArchiveName = "${modName}-ConfigPack-${mcVersion}-${project.version}.zip"
+def datapackArchiveName = "${modName}-ConfigPack-${mcVersion}-${project.version}${alphaSuffix}.zip"
 
 tasks.register('buildDatapack', Zip) {
     group = 'build'
@@ -115,10 +118,11 @@ publishMods {
 
     // Release metadata
     version = project.version.toString()
-    type = STABLE
+    type = isAlpha ? ALPHA : STABLE
     def displayPrefix = project.findProperty('publishDisplayPrefix')
     def displaySuffix = project.findProperty('publishDisplaySuffix')
-    displayName = "${displayPrefix} ${project.version}-${mcVersion} ${displaySuffix}"
+    def alphaMarker = isAlpha ? ' [ALPHA]' : ''
+    displayName = "${displayPrefix} ${project.version}-${mcVersion} ${displaySuffix}${alphaMarker}"
 
 
     // Mod loaders are set per-publication below so the config datapack (loader "datapack")
@@ -176,12 +180,21 @@ publishMods {
     }
 
     discord {
-        webhookUrl = providers.environmentVariable('DISCORD_WEBHOOK')
+        webhookUrl = providers.environmentVariable(isAlpha ? 'DISCORD_ALPHA_WEBHOOK_URL' : 'DISCORD_WEBHOOK')
         dryRunWebhookUrl = providers.environmentVariable('DISCORD_WEBHOOK_DRY_RUN').orElse('')
         username = "Moog's Mods"
 
-        // Keep the release announcement linking to the mod only, not the config datapack.
-        setPlatforms(publishMods.platforms.modrinth, publishMods.platforms.curseforge)
+        // Alpha mode: attach 2 embed buttons (Modrinth + CurseForge) pointing at
+        // the actual uploaded alpha jar so testers click straight through. The
+        // config datapack stays excluded.
+        // Stable mode: suppress auto-embeds; the curated CurseForge files and
+        // Modrinth versions links inside the content block are the only download
+        // entry points.
+        if (isAlpha) {
+            setPlatforms(publishMods.platforms.modrinth, publishMods.platforms.curseforge)
+        } else {
+            setPlatforms()
+        }
 
         content = changelog.map { text ->
             def prefix = project.findProperty('publishDisplayPrefix')
@@ -189,8 +202,12 @@ publishMods {
             def mcStart = project.findProperty('publishMcStart')
             def mcEnd = project.findProperty('publishMcEnd')
             def versionRange = mcStart == mcEnd ? mcStart : "$mcStart - $mcEnd"
-
-            """## 🎉 **${modName} ${project.version}** has been released!
+            def header = isAlpha
+                ? "## 🧪 **${modName} ${project.version}** alpha build is up for testing!"
+                : "## 🎉 **${modName} ${project.version}** has been released!"
+            def modrinthSlug = 'mns-moogs-nether-structures'
+            def curseforgeSlug = (project.findProperty('curseforgeProjectSlug') ?: 'mns-moogs-nether-structures')
+            def body = """${header}
 
 **${prefix} ${project.version}-${mcVersion} ${suffix}**
 Versions - ${versionRange}
@@ -198,6 +215,10 @@ Versions - ${versionRange}
 ### 📝 **Changelog:**
 ${text.trim()}
 """
+            // Stable mode appends curated CurseForge files + Modrinth versions links
+            // under the message body. Alpha mode relies on the per-platform embed
+            // links auto-attached above, so no curated link line is appended.
+            isAlpha ? body : body + "\n<:curseforge:1132291568305459250> [CurseForge](https://www.curseforge.com/minecraft/mc-mods/${curseforgeSlug}/files) | <:modrinth:1132291566019563550> [Modrinth](https://modrinth.com/mod/${modrinthSlug}/versions)\n"
         }
 
         style {
