@@ -24,6 +24,10 @@ out/
 .DS_Store
 Thumbs.db
 
+# Python bytecode caches (scripts/ helpers)
+__pycache__/
+*.pyc
+
 # Personal dev notes (not for distribution)
 NAMESPACE_GUIDE.md
 
