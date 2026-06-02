@@ -4,6 +4,7 @@
   "values": [
     "#minecraft:is_nether",
     { "id": "#c:in_nether", "required": false },
+    { "id": "#c:is_nether", "required": false },
     { "id": "#betternether:biome", "required": false },
     { "id": "#incendium:all_incendium_biomes", "required": false }
   ]

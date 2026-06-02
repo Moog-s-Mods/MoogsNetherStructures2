@@ -4,6 +4,7 @@
   "values": [
     "minecraft:crimson_forest",
     { "id": "#c:nether_forests", "required": false },
+    { "id": "#c:is_nether_forest", "required": false },
     { "id": "betternether:crimson_glowing_woods", "required": false },
     { "id": "betternether:crimson_pinewood", "required": false },
     { "id": "betternether:wart_forest", "required": false },
