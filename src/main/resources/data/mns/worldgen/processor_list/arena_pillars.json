@@ -42,7 +42,7 @@
       "processor_type": "moogs_structures:spawner_randomizing_processor",
       "weighted_entities": [
         {
-          "entity": "minecraft:piglin",
+          "entity": "minecraft:zombified_piglin",
           "weight": 5
         },
         {
