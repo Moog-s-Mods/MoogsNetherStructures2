@@ -55,7 +55,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:heavy_core",
+          "name": "minecraft:nether_star",
           "weight": 1
         }
       ]
@@ -242,7 +242,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:wind_charge",
+          "name": "minecraft:dragon_breath",
           "weight": 5,
           "functions": [
             {
@@ -282,7 +282,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:music_disc_creator",
+          "name": "minecraft:music_disc_otherside",
           "weight": 1
         }
       ]

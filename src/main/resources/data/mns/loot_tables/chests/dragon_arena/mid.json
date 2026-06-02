@@ -99,7 +99,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:ominous_bottle",
+          "name": "minecraft:experience_bottle",
           "weight": 3
         },
         {
