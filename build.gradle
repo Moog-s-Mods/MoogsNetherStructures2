@@ -164,19 +164,25 @@ publishMods {
     // Config datapack publication -> separate CurseForge project (no Modrinth project yet).
     // Inherits the shared changelog/version/type from above but overrides file,
     // mod loader (datapack), project ID and display name.
-    curseforge("curseforgeDatapack") {
-        accessToken = providers.environmentVariable('CURSEFORGE_API_KEY')
-        projectId = (project.findProperty('datapackCurseforgeProjectId') ?: '')
-        file = tasks.named('buildDatapack').flatMap { it.archiveFile }
-        displayName = "MNS Config Pack ${project.version}-${mcVersion}"
-        modLoaders.set(["datapack"])
-        announcementTitle = "Download the Config Pack on CurseForge"
-        serverRequired = false
-        minecraftVersionRange {
-            start = project.findProperty('publishMcStart')
-            end = project.findProperty('publishMcEnd')
+    //
+    // Skipped on alpha builds. The config datapack is a power-user customisation
+    // surface that doesn't make sense to ship per-alpha, and historically the
+    // CurseForge API rejects the "datapack" mod-loader upload under alpha mode.
+    if (!isAlpha) {
+        curseforge("curseforgeDatapack") {
+            accessToken = providers.environmentVariable('CURSEFORGE_API_KEY')
+            projectId = (project.findProperty('datapackCurseforgeProjectId') ?: '')
+            file = tasks.named('buildDatapack').flatMap { it.archiveFile }
+            displayName = "MNS Config Pack ${project.version}-${mcVersion}"
+            modLoaders.set(["datapack"])
+            announcementTitle = "Download the Config Pack on CurseForge"
+            serverRequired = false
+            minecraftVersionRange {
+                start = project.findProperty('publishMcStart')
+                end = project.findProperty('publishMcEnd')
+            }
+            requires("mns-moogs-nether-structures")
         }
-        requires("mns-moogs-nether-structures")
     }
 
     discord {
