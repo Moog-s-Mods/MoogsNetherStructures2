@@ -80,17 +80,37 @@ jobs:
           " "$VERSION")
           printf "body<<DELIMITER\n%s\nDELIMITER\n" "$BODY" >> "$GITHUB_OUTPUT"
 
-      - name: Post Discord Banner
+      - name: Read alphaBuild flag
+        id: alpha
         shell: bash
         run: |
-          if [ -z "$DISCORD_WEBHOOK" ]; then
-            echo "DISCORD_WEBHOOK not set, skipping."
+          IS_ALPHA=$(grep -E '^alphaBuild=' gradle.properties | cut -d= -f2 | tr -d ' \r\n' || true)
+          echo "is_alpha=${IS_ALPHA:-false}" >> "$GITHUB_OUTPUT"
+
+      - name: Post Discord Banner
+        shell: bash
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_ALPHA_WEBHOOK_URL: ${{ secrets.DISCORD_ALPHA_WEBHOOK_URL }}
+          IS_ALPHA: ${{ steps.alpha.outputs.is_alpha }}
+        run: |
+          if [ "$IS_ALPHA" = "true" ]; then
+            WEBHOOK="$DISCORD_ALPHA_WEBHOOK_URL"
+          else
+            WEBHOOK="$DISCORD_WEBHOOK"
+          fi
+          if [ -z "$WEBHOOK" ]; then
+            echo "Discord webhook not set, skipping."
             exit 0
           fi
           BANNER_URL=$(grep 'discordBannerUrl=' gradle.properties | cut -d'=' -f2)
           ROLE_ID=$(grep 'discordRoleId=' gradle.properties | cut -d'=' -f2)
           AVATAR_URL=$(grep 'discordAvatarUrl=' gradle.properties | cut -d'=' -f2)
           PING=$(grep 'discordPing=' gradle.properties | cut -d'=' -f2)
+          # alphaBuild=true forces no ping (alpha test builds never mention subscribers).
+          if [ "$IS_ALPHA" = "true" ]; then
+            PING=false
+          fi
           if [ "$PING" = "true" ]; then
             CONTENT="<@&$ROLE_ID>\n$BANNER_URL"
             ALLOWED="{\"parse\":[],\"roles\":[\"$ROLE_ID\"]}"
@@ -98,11 +118,9 @@ jobs:
             CONTENT="$BANNER_URL"
             ALLOWED="{\"parse\":[]}"
           fi
-          curl -X POST "$DISCORD_WEBHOOK" \
+          curl -X POST "$WEBHOOK" \
             -H "Content-Type: application/json" \
             -d "{\"username\":\"Moog's Mods\",\"avatar_url\":\"$AVATAR_URL\",\"content\":\"$CONTENT\",\"allowed_mentions\":$ALLOWED}"
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Publish to CurseForge, Modrinth & Discord
         shell: bash
@@ -113,18 +131,41 @@ jobs:
           MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_ALPHA_WEBHOOK_URL: ${{ secrets.DISCORD_ALPHA_WEBHOOK_URL }}
+
+      - name: Build release title and body
+        id: release_meta
+        shell: bash
+        env:
+          IS_ALPHA: ${{ steps.alpha.outputs.is_alpha }}
+          CHANGELOG_BODY: ${{ steps.changelog.outputs.body }}
+        run: |
+          if [ "$IS_ALPHA" = "true" ]; then
+            TITLE="${GITHUB_REF_NAME} (Alpha)"
+            BANNER="> 🧪 **Alpha test build.** Feedback welcome at https://github.com/${GITHUB_REPOSITORY}/issues."
+            BODY=$(printf "%s\n\n%s" "$BANNER" "$CHANGELOG_BODY")
+          else
+            TITLE="${GITHUB_REF_NAME}"
+            BODY="$CHANGELOG_BODY"
+          fi
+          echo "title=${TITLE}" >> "$GITHUB_OUTPUT"
+          printf "body<<DELIMITER\n%s\nDELIMITER\n" "$BODY" >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
-          body: ${{ steps.changelog.outputs.body }}
+          name: ${{ steps.release_meta.outputs.title }}
+          body: ${{ steps.release_meta.outputs.body }}
+          prerelease: ${{ steps.alpha.outputs.is_alpha == 'true' }}
           files: |
             build/libs/*.jar
             build/datapack/*.zip
           fail_on_unmatched_files: true
 
       - name: Bump patch version for next release
-        if: success()
+        # Skip on alpha. The eventual stable release reuses the same modVersion,
+        # so we only bump after a real stable ships.
+        if: success() && steps.alpha.outputs.is_alpha != 'true'
         shell: bash
         run: |
           MC=$(grep '^minecraftVersion=' gradle.properties | cut -d= -f2)
@@ -140,5 +181,5 @@ jobs:
           sed -i "s|^modVersion=.*$|modVersion=${NEW}|" gradle.properties
           NEW_VERSION="$NEW" RELEASE_DATE="$TODAY" python3 .github/scripts/post_release_bump.py
           git add gradle.properties CHANGELOG.md
-          git commit -m "Post-release: bump ${OLD} → ${NEW} + stub CHANGELOG section"
+          git commit -m "Post-release: bump ${OLD} -> ${NEW} + stub CHANGELOG section"
           git push origin "$BRANCH"
