@@ -60,7 +60,7 @@ tasks.processResources {
 }
 
 def isAlpha = project.findProperty('alphaBuild')?.toString()?.toBoolean() ?: false
-def alphaSuffix = isAlpha ? '-alpha' : ''
+def alphaSuffix = ''
 
 tasks.named('jar') {
     archiveFileName = "${modName}-${mcVersion}-${project.version}${alphaSuffix}.jar"
