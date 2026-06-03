@@ -2,6 +2,13 @@
 
 ---
 
+## 3.0.0-alpha.2 — 2026-06-03
+
+### Fixed
+- Accept MSL alpha versions in dependency constraint. Previously MNS required MSL `>=3.0.0` which rejected `3.0.0-alpha.X` per semver pre-release ordering, causing a Fabric Loader incompatibility error at startup. Constraint relaxed to `>=3.0.0-alpha.1`.
+
+---
+
 ## [3.0.0] - 2026-05-28
 
 Adds the Mega Fortress and Large Arena, and requires Moog's Structure Lib 3.0.0 or newer.
