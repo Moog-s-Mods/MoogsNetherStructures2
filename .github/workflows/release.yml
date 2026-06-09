@@ -40,6 +40,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     needs: validate
+    outputs:
+      is_alpha: ${{ steps.alpha.outputs.is_alpha }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -125,7 +127,11 @@ jobs:
         run: |
           set -eo pipefail
           chmod +x gradlew
-          ./gradlew publishMods
+          if [ "${{ steps.alpha.outputs.is_alpha }}" = "true" ]; then
+            ./gradlew publishMods
+          else
+            ./gradlew publishMods -x publishCurseforgeDatapack
+          fi
         env:
           MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
@@ -182,3 +188,12 @@ jobs:
           git add gradle.properties CHANGELOG.md
           git commit -m "Post-release: bump ${OLD} -> ${NEW} + stub CHANGELOG section"
           git push origin "$BRANCH"
+
+  config-pack:
+    name: Publish Config Pack
+    needs: release
+    if: needs.release.outputs.is_alpha != 'true'
+    uses: ./.github/workflows/config-pack.yml
+    with:
+      tag: ${{ github.ref_name }}
+    secrets: inherit
