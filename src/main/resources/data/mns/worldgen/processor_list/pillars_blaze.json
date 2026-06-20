@@ -41,7 +41,7 @@
     {
       "processor_type": "moogs_structures:pillar_processor",
       "direction": "up",
-      "pillar_length": 40,
+      "pillar_length": 60,
       "pillar_trigger_and_replacements": [
         {
           "trigger": { "Name": "minecraft:lime_stained_glass" },
