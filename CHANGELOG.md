@@ -5,6 +5,7 @@
 ## 3.0.0-alpha.2 — 2026-06-03
 
 ### Fixed
+- Piglin item format on 1.21+ targets - was using legacy tag compound (pre-1.20.5 shape), now uses components map per the target MC version
 - Accept MSL alpha versions in dependency constraint. Previously MNS required MSL `>=3.0.0` which rejected `3.0.0-alpha.X` per semver pre-release ordering, causing a Fabric Loader incompatibility error at startup. Constraint relaxed to `>=3.0.0-alpha.1`.
 
 ---
