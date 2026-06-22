@@ -41,7 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: validate
     outputs:
-      is_alpha: ${{ steps.alpha.outputs.is_alpha }}
+      is_alpha:  ${{ steps.alpha.outputs.is_alpha }}
+      changelog: ${{ steps.changelog.outputs.body }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -81,12 +82,14 @@ jobs:
           ' CHANGELOG.md)
           printf "body<<DELIMITER\n%s\nDELIMITER\n" "$BODY" >> "$GITHUB_OUTPUT"
 
-      - name: Read alphaBuild flag
+      - name: Read releaseType
         id: alpha
         shell: bash
         run: |
-          IS_ALPHA=$(grep -E '^alphaBuild=' gradle.properties | cut -d= -f2 | tr -d ' \r\n' || true)
-          echo "is_alpha=${IS_ALPHA:-false}" >> "$GITHUB_OUTPUT"
+          RELEASE_TYPE=$(grep -E '^releaseType=' gradle.properties | cut -d= -f2 | tr -d ' \r\n' || echo 'major')
+          RELEASE_TYPE=${RELEASE_TYPE:-major}
+          echo "release_type=${RELEASE_TYPE}" >> "$GITHUB_OUTPUT"
+          [ "$RELEASE_TYPE" = "alpha" ] && echo "is_alpha=true" >> "$GITHUB_OUTPUT" || echo "is_alpha=false" >> "$GITHUB_OUTPUT"
 
       - name: Publish to CurseForge & Modrinth
         shell: bash
@@ -132,15 +135,6 @@ jobs:
             build/datapack/*.zip
           fail_on_unmatched_files: true
 
-      - name: Post Discord Announcement
-        shell: bash
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          DISCORD_ALPHA_WEBHOOK_URL: ${{ secrets.DISCORD_ALPHA_WEBHOOK_URL }}
-          IS_ALPHA: ${{ steps.alpha.outputs.is_alpha }}
-          CHANGELOG_BODY: ${{ steps.changelog.outputs.body }}
-        run: python3 .github/scripts/post_discord.py
-
       - name: Bump patch version for next release
         # Skip on alpha. The eventual stable release reuses the same modVersion,
         # so we only bump after a real stable ships.
@@ -162,6 +156,15 @@ jobs:
           git add gradle.properties CHANGELOG.md
           git commit -m "Post-release: bump ${OLD} -> ${NEW} + stub CHANGELOG section"
           git push origin "$BRANCH"
+
+  discord:
+    name: Discord Announcement
+    needs: release
+    uses: FinnSetchell/release-actions/.github/workflows/discord-announce.yml@v1
+    with:
+      changelog: ${{ needs.release.outputs.changelog }}
+    secrets:
+      WORKER_API_KEY: ${{ secrets.WORKER_API_KEY }}
 
   config-pack:
     name: Publish Config Pack
