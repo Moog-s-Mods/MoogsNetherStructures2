@@ -1,6 +1,7 @@
 """Post a unified Discord release announcement (banner + changelog + download cards)."""
 import json
 import os
+import re
 import urllib.request
 
 
@@ -46,7 +47,9 @@ def main():
     if extra:
         versions_str += f", {extra}"
 
-    changelog = os.environ.get("CHANGELOG_BODY", "").strip()
+    changelog_raw = os.environ.get("CHANGELOG_BODY", "").strip()
+    image_urls = re.findall(r'!\[.*?\]\((https?://\S+?)\)', changelog_raw)
+    changelog = re.sub(r'\n?!\[.*?\]\(https?://\S+?\)', '', changelog_raw).strip()
 
     if is_alpha:
         header = f"\U0001f9ea **{mod_name} {version}** alpha build is up for testing!"
@@ -62,21 +65,32 @@ def main():
         f"| <:modrinth:1132291566019563550> [Modrinth](https://modrinth.com/mod/{mr_slug}/versions)"
     )
 
+    # Discord grids up to 4 images when all embeds share the same `url` field
+    grid_url = f"https://www.curseforge.com/minecraft/mc-mods/{cf_slug}"
+    grid_images = image_urls
+
+    embeds = [{"image": {"url": banner_url}, "color": color}]
+    main_embed = {"description": description, "color": color, "thumbnail": {"url": thumbnail}}
+    if grid_images:
+        main_embed["url"] = grid_url
+    embeds.append(main_embed)
+    for img_url in grid_images:
+        embeds.append({"url": grid_url, "image": {"url": img_url}, "color": color})
+    embeds += [
+        {
+            "description": f"<:curseforge:1132291568305459250> [Download from CurseForge](https://www.curseforge.com/minecraft/mc-mods/{cf_slug}/files)",
+            "color": 0xE87C2E,
+        },
+        {
+            "description": f"<:modrinth:1132291566019563550> [Download from Modrinth](https://modrinth.com/mod/{mr_slug}/versions)",
+            "color": 0x1BD96A,
+        },
+    ]
+
     payload = {
         "username": "Moog's Mods",
         "avatar_url": avatar_url,
-        "embeds": [
-            {"image": {"url": banner_url}, "color": color},
-            {"description": description, "color": color, "thumbnail": {"url": thumbnail}},
-            {
-                "description": f"<:curseforge:1132291568305459250> [Download from CurseForge](https://www.curseforge.com/minecraft/mc-mods/{cf_slug}/files)",
-                "color": 0xE87C2E,
-            },
-            {
-                "description": f"<:modrinth:1132291566019563550> [Download from Modrinth](https://modrinth.com/mod/{mr_slug}/versions)",
-                "color": 0x1BD96A,
-            },
-        ],
+        "embeds": embeds,
     }
 
     # Alpha never pings; stable pings only if discordPing=true
