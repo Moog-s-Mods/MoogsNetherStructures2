@@ -9,7 +9,7 @@
 
 ---
 
-## [3.0.0] - 2026-05-28
+## [3.0.0] - 2026-06-22
 
 ### Added
 - **Mega Fortress** - A massive new nether fortress made up of 138 pieces and packed with loot, mobs and traps. This is our best structure yet across all Moogs structure mods! The mega fortress is made up of various towers with dungeons hidden beneath the lava. Bridges stretch out in all directions with stairs and towers leading to a second floor suspended from the roof with chains.
@@ -21,6 +21,10 @@ Good luck!
 
 ### Changed
 - Now requires Moog's Structure Lib **v3.0.0** or newer.
+- Polished `mega_fortress` upper and staircase NBT pieces (re-saves with content tweaks); chain pillars lengthened so they reach the nether roof.
+
+### Fixed
+- MSL alpha versions accepted in the dependency constraint (`>=3.0.0-alpha.1`); previously the `>=3.0.0` constraint rejected MSL pre-releases per semver pre-release ordering, causing a Fabric Loader incompatibility at startup.
 
 ![collage (36)-min](https://pub-24a4e0e7ea8544a5b6f73c3a23512589.r2.dev/images/406afce8fbaa486584f5ee0567f876c3.png)
 ![collage (37)-min](https://pub-24a4e0e7ea8544a5b6f73c3a23512589.r2.dev/images/0c5cae1f11754bee9070818529c13564.png)
