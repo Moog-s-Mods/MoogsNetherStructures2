@@ -51,7 +51,7 @@ tasks.processResources {
     filesMatching('pack.mcmeta') { expand(meta) }
 }
 
-def isAlpha = project.findProperty('alphaBuild')?.toString()?.toBoolean() ?: false
+def isAlpha = (project.findProperty('releaseType') ?: 'major') == 'alpha'
 def alphaSuffix = ''
 
 tasks.named('jar') {
