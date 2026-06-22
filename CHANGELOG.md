@@ -13,7 +13,7 @@
 
 ---
 
-## [3.0.0] - 2026-05-27
+## [3.0.0] - 2026-06-22
 
 ### Added
 - **Mega Fortress** - A massive new nether fortress made up of 207 pieces and packed with loot, mobs and traps. This is our best structure yet across all Moogs structure mods! The mega fortress is made up of various towers with dungeons hidden beneath the lava. Bridges stretch out in all directions with stairs and towers leading to a second floor suspended from the roof with chains.
@@ -25,6 +25,13 @@ Good luck!
 
 ### Changed
 - Now requires Moog's Structure Lib **v3.0.0** or newer.
+- Polished several `mega_fortress` upper, forks, staircases, and spawner NBT pieces (re-saves with content tweaks); plain black banners in fortress corners and the east crossing now use the fortress pattern; `mega_crossing_center_1` got a stray observer fix + dispenser load on the floor; chain pillars lengthened so they reach the nether roof.
+- Minecraft 26.2 support (validator + pack format range extended to 1.21–26.2).
+- `pack.mcmeta` now declares `supported_formats: [48, 107]` so MC 1.21.9+ accepts the pack range without complaint.
+
+### Fixed
+- Piglin item format on 1.21+ targets — was using the legacy tag-compound (pre-1.20.5 shape); now uses the components map per the target MC version.
+- MSL alpha versions accepted in the dependency constraint (`>=3.0.0-alpha.1`); previously the `>=3.0.0` constraint rejected MSL pre-releases per semver pre-release ordering, causing a Fabric Loader incompatibility at startup.
 
 ![collage (36)-min](https://pub-24a4e0e7ea8544a5b6f73c3a23512589.r2.dev/images/406afce8fbaa486584f5ee0567f876c3.png)
 ![collage (37)-min](https://pub-24a4e0e7ea8544a5b6f73c3a23512589.r2.dev/images/0c5cae1f11754bee9070818529c13564.png)
