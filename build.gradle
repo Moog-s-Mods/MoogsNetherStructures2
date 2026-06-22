@@ -205,8 +205,6 @@ publishMods {
         // entry points.
         if (isAlpha) {
             setPlatforms(publishMods.platforms.modrinth, publishMods.platforms.curseforge)
-        } else {
-            setPlatforms()
         }
 
         content = changelog.map { text ->
