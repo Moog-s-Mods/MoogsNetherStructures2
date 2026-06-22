@@ -195,9 +195,7 @@ publishMods {
         // Stable mode: suppress auto-embeds; the curated CurseForge files and
         // Modrinth versions links inside the content block are the only download
         // entry points.
-        if (isAlpha) {
-            setPlatforms(publishMods.platforms.modrinth, publishMods.platforms.curseforge)
-        }
+        setPlatforms(publishMods.platforms.modrinth, publishMods.platforms.curseforge)
 
         content = changelog.map { text ->
             def prefix = project.findProperty('publishDisplayPrefix')
