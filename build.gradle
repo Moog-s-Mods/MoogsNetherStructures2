@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'me.modmuss50.mod-publish-plugin' version '0.8.4'
+    id 'me.modmuss50.mod-publish-plugin' version '2.0.1'
 }
 
 group = "com.finndog"
@@ -153,7 +153,7 @@ publishMods {
         projectSlug = (project.findProperty('curseforgeProjectSlug') ?: '')
         modLoaders.addAll("fabric", "forge", "neoforge")
         announcementTitle = "<:curseforge:1132291568305459250> Download on CurseForge"
-        serverRequired = true
+        server = true
         minecraftVersionRange {
             start = project.findProperty('publishMcStart')
             end = project.findProperty('publishMcEnd')
@@ -175,7 +175,7 @@ publishMods {
             file = tasks.named('buildDatapack').flatMap { it.archiveFile }
             displayName = "MNS Config Pack ${project.version}-${mcVersion}"
             announcementTitle = "Download the Config Pack on CurseForge"
-            serverRequired = false
+            client = true
             minecraftVersionRange {
                 start = project.findProperty('publishMcStart')
                 end = project.findProperty('publishMcEnd')
