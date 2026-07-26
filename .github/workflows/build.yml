@@ -3,7 +3,8 @@ name: Build
 on:
   push:
     branches: ['**']
-    tags-ignore: ['*.*.*-*.*.*']
+    # Fleet-standard release tags (<X.Y.Z>-<mc>) are handled by release.yml.
+    tags-ignore: ['*.*.*-*', '*.*.*-alpha.*-*']
   pull_request:
     branches: ['**']
 
@@ -21,13 +22,12 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
-        with:
-          gradle-version: "8.13"
 
       - name: Build
         shell: bash
         run: |
           set -eo pipefail
-          gradle build
+          chmod +x gradlew
+          ./gradlew build
           echo "---- build/libs contents ----"
           ls -la build/libs/

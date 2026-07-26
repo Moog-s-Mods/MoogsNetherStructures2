@@ -1,0 +1,40 @@
+# v2 publish manifest — Moog-s-Mods/MoogsNetherStructures2
+# Lives on the DEFAULT branch (1.21-datapack) only; every publish branch reads it from here.
+# Schema per release-actions docs/v2-contracts.md.
+schema: 1
+mod:
+  id: mns
+  displayName: "Moog's Nether Structures"
+  environments: [Server]   # live-verified 2026-07-26: CF files carry Server
+  name: MoogsNetherStructures   # informational; the repo is MoogsNetherStructures2, the jar/display name drops the "2"
+  validate: true
+platforms:
+  curseforge: { projectId: 967466, slug: mns-moogs-nether-structures }   # CF /mods API 403 — verified via the public files endpoint
+  modrinth:   { projectId: nGUXvjTa, slug: mns-moogs-nether-structures } # live-verified 2026-07-26
+discord:
+  embedColor: "#c20045"
+  avatarUrl: "https://media.forgecdn.net/avatars/thumbnails/939/604/64/64/638419616560253774.png"
+  bannerUrl: "https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_header.webp"
+  thumbnailUrl: "https://media.forgecdn.net/avatars/thumbnails/939/604/64/64/638419616560253774.png"  # square 64px (same as avatar)
+  pingDefault: false   # both branches explicitly discordPing=false today
+# Required dependencies (live-verified against the newest Modrinth version 2026-07-26).
+dependencies:
+  - { modrinth: 1oUDhxuy, curseforge: moogs-structure-lib, type: required }
+artifacts:
+  - type: universal-jar
+  # CurseForge only — no Modrinth project exists for this config pack.
+  # It IS published by CI today: both branches' v1 release.yml and publish.yml pass
+  # `configPack: curseforge`, and 3.0.0 packs are live for MC 1.20 and 1.21.
+  - type: config-pack
+    platforms:
+      curseforge: { projectId: 969103 }   # live: MoogsNetherStructures-ConfigPack-*.zip
+    includeAlpha: false
+targets:
+  - branch: 1.20-datapack
+    mc: { start: "1.20", end: "1.20.6" }
+    java: 21
+    displaySuffix: "[UNIVERSAL]"
+  - branch: 1.21-datapack
+    mc: { start: "1.21", end: "26.2" }   # fleet standard for universal 1.21 targets
+    java: 21
+    displaySuffix: "[UNIVERSAL]"
