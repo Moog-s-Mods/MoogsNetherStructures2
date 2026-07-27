@@ -5,7 +5,7 @@
     {
       "weight": 5,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/straight_1",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -20,7 +20,7 @@
     {
       "weight": 5,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/straight_2",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -35,7 +35,7 @@
     {
       "weight": 5,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/straight_3",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -50,7 +50,7 @@
     {
       "weight": 5,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/straight_4",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -65,7 +65,7 @@
     {
       "weight": 45,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/pillar_straight_1",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -80,7 +80,7 @@
     {
       "weight": 45,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/pillar_straight_2",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -95,7 +95,7 @@
     {
       "weight": 5,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/corner_1",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -110,7 +110,7 @@
     {
       "weight": 8,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/corner_2",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -125,7 +125,7 @@
     {
       "weight": 10,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/small_junction_1",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -140,7 +140,7 @@
     {
       "weight": 10,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/small_junction_2",
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -155,7 +155,7 @@
     {
       "weight": 7,
       "element": {
-        "element_type": "moogs_structures:versioned_single_pool_element",
+        "element_type": "minecraft:single_pool_element",
         "location": "mns:mega_fortress/upper/small_crossing_1",
         "processors": "mns:pillars",
         "projection": "rigid",

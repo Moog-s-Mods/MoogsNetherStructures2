@@ -8,7 +8,7 @@
         "location": "mns:mega_arenas/mobs/arena_bowman",
         "processors": "minecraft:empty",
         "projection": "rigid",
-        "element_type": "moogs_structures:versioned_single_pool_element"
+        "element_type": "minecraft:single_pool_element"
       }
     },
     {
@@ -17,7 +17,7 @@
         "location": "mns:mega_arenas/mobs/pit_vanguard",
         "processors": "minecraft:empty",
         "projection": "rigid",
-        "element_type": "moogs_structures:versioned_single_pool_element"
+        "element_type": "minecraft:single_pool_element"
       }
     },
     {
@@ -26,7 +26,7 @@
         "location": "mns:mega_arenas/mobs/ember_sentinel",
         "processors": "minecraft:empty",
         "projection": "rigid",
-        "element_type": "moogs_structures:versioned_single_pool_element"
+        "element_type": "minecraft:single_pool_element"
       }
     }
   ]

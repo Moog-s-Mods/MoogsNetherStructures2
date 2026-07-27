@@ -8,7 +8,7 @@
         "location": "mns:mega_fortress/crossings/medium/medium_crossing_center_2",
         "processors": "mns:pillars",
         "projection": "rigid",
-        "element_type": "moogs_structures:versioned_single_pool_element"
+        "element_type": "minecraft:single_pool_element"
       }
     }
   ]
