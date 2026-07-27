@@ -12,7 +12,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_1"
         }
       }
     },
@@ -26,7 +26,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_2"
         }
       }
     },
@@ -40,7 +40,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_3"
         }
       }
     },
@@ -54,7 +54,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_4"
         }
       }
     },
@@ -68,7 +68,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/halfroofed_straight_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_2"
         }
       }
     },
@@ -92,7 +92,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofed_1_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_2"
         }
       }
     },
@@ -116,7 +116,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofed_1_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_1"
         }
       }
     },
@@ -130,7 +130,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofed_fork_main_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_1"
         }
       }
     },
@@ -144,7 +144,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofed_fork_main_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_2"
         }
       }
     },
@@ -158,7 +158,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_5",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_5",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_5"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_5"
         }
       }
     },
@@ -172,7 +172,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_6",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_6",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_6"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_6"
         }
       }
     },
@@ -186,7 +186,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_7",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_7",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_7"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_7"
         }
       }
     },
@@ -200,7 +200,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofed_single_straight_8",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_8",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_8"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofed_single_straight_8"
         }
       }
     },
@@ -214,7 +214,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/halfroofed_straight_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_4"
         }
       }
     },
@@ -228,7 +228,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofed_fork_main_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_3"
         }
       }
     },
@@ -242,7 +242,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofed_fork_main_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofed_fork_main_4"
         }
       }
     },
@@ -266,7 +266,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofed_1_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_3"
         }
       }
     },
@@ -290,7 +290,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofed_1_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofed_1_4"
         }
       }
     }

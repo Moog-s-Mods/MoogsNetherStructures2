@@ -8,7 +8,7 @@
         "location": "mns:mega_arenas/mobs/arena_gladiator",
         "locations": {
           "1.21-1.21.4": "mns:mega_arenas/mobs/1.21/arena_gladiator",
-          "1.21.5-26.1.2": "mns:mega_arenas/mobs/arena_gladiator"
+          "1.21.5-26.2": "mns:mega_arenas/mobs/arena_gladiator"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

@@ -12,7 +12,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_side_2_7",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_side_2_7",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_side_2_7"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_side_2_7"
         }
       }
     }

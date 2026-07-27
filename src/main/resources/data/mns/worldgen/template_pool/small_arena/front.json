@@ -11,7 +11,7 @@
         "projection": "rigid",
         "locations": {
           "1.21-1.21.4": "mns:small_arena/front",
-          "1.21.5-26.1.2": "mns:small_arena/v1_21_5/front"
+          "1.21.5-26.2": "mns:small_arena/v1_21_5/front"
         }
       }
     }

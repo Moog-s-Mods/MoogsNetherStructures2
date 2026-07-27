@@ -12,7 +12,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_1"
         }
       }
     },
@@ -26,7 +26,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_2"
         }
       }
     },
@@ -40,7 +40,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_3"
         }
       }
     },
@@ -54,7 +54,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_4"
         }
       }
     },
@@ -68,7 +68,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/spawners/spawner_end_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/spawners/spawner_end_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/spawners/spawner_end_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/spawners/spawner_end_1"
         }
       }
     },
@@ -82,7 +82,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/spawners/spawner_side_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/spawners/spawner_side_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/spawners/spawner_side_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/spawners/spawner_side_1"
         }
       }
     },
@@ -96,7 +96,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/halfroofed_straight_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_1"
         }
       }
     },
@@ -110,7 +110,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/crossings/small/small_crossing_west_straight_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/crossings/small/small_crossing_west_straight_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/crossings/small/small_crossing_west_straight_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/crossings/small/small_crossing_west_straight_1"
         }
       }
     },
@@ -124,7 +124,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/crossings/small/small_crossing_west_straight_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/crossings/small/small_crossing_west_straight_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/crossings/small/small_crossing_west_straight_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/crossings/small/small_crossing_west_straight_2"
         }
       }
     },
@@ -138,7 +138,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/crossings/medium/medium_crossing_north_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/crossings/medium/medium_crossing_north_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/crossings/medium/medium_crossing_north_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/crossings/medium/medium_crossing_north_2"
         }
       }
     },
@@ -152,7 +152,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/crossings/large/large_crossing_west_straight_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/crossings/large/large_crossing_west_straight_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/crossings/large/large_crossing_west_straight_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/crossings/large/large_crossing_west_straight_1"
         }
       }
     },
@@ -166,7 +166,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/staircases/staircase_lower_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_1"
         }
       }
     },
@@ -180,7 +180,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/staircases/staircase_lower_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_2"
         }
       }
     },
@@ -203,7 +203,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_main_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_1"
         }
       }
     },
@@ -217,7 +217,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_main_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_2"
         }
       }
     },
@@ -231,7 +231,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_main_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_3"
         }
       }
     },
@@ -245,7 +245,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_main_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_4"
         }
       }
     },
@@ -259,7 +259,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofless_1_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_1"
         }
       }
     },
@@ -273,7 +273,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofless_1_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_2"
         }
       }
     },
@@ -287,7 +287,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_5",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_5",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_5"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_5"
         }
       }
     },
@@ -301,7 +301,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_6",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_6",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_6"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_6"
         }
       }
     },
@@ -315,7 +315,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_7",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_7",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_7"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_7"
         }
       }
     },
@@ -329,7 +329,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/roofless_single_straight_8",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_8",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_8"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/roofless_single_straight_8"
         }
       }
     },
@@ -343,7 +343,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corridors/halfroofed_straight_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corridors/halfroofed_straight_3"
         }
       }
     },
@@ -357,7 +357,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/staircases/staircase_lower_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_3"
         }
       }
     },
@@ -371,7 +371,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/staircases/staircase_lower_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/staircases/staircase_lower_4"
         }
       }
     },
@@ -385,7 +385,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/spawners/spawner_side_2",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/spawners/spawner_side_2",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/spawners/spawner_side_2"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/spawners/spawner_side_2"
         }
       }
     },
@@ -399,7 +399,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_main_5",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_5",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_5"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_5"
         }
       }
     },
@@ -413,7 +413,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_main_6",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_6",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_6"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_6"
         }
       }
     },
@@ -427,7 +427,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/forks/roofless_fork_main_7",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_7",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_7"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/forks/roofless_fork_main_7"
         }
       }
     },
@@ -441,7 +441,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofless_1_3",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_3",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_3"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_3"
         }
       }
     },
@@ -455,7 +455,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/corners/corner_roofless_1_4",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_4",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_4"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/corners/corner_roofless_1_4"
         }
       }
     }

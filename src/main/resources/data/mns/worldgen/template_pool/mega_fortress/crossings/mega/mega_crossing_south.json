@@ -22,7 +22,7 @@
         "locations": {
           "1.21-1.21.8": "mns:mega_fortress/start/mega_crossing_south_straight_1",
           "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/start/mega_crossing_south_straight_1",
-          "26.1-26.1.2": "mns:mega_fortress/v1_21_9/start/mega_crossing_south_straight_1"
+          "26.1-26.2": "mns:mega_fortress/v1_21_9/start/mega_crossing_south_straight_1"
         }
       }
     }

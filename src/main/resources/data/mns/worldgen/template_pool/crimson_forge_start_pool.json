@@ -12,7 +12,7 @@
         "location": "mns:crimson_forge",
         "locations": {
           "1.21-1.21.4": "mns:crimson_forge",
-          "1.21.5-26.1.2": "mns:v1_21_5/crimson_forge"
+          "1.21.5-26.2": "mns:v1_21_5/crimson_forge"
         },
 
         "processors": "minecraft:empty",
