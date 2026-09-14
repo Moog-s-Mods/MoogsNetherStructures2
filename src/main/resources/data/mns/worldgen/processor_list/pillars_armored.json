@@ -1,6 +1,15 @@
 {
   "processors": [
     {
+      "processor_type": "moogs_structures:vanilla_loot_swap_processor",
+      "modid": "mns",
+      "vanilla_key": "fortress",
+      "seed_strategy": "randomize",
+      "loot_table_mapping": {
+        "mns:chests/mega_fortress/intact": "minecraft:chests/nether_bridge"
+      }
+    },
+    {
       "processor_type": "moogs_structures:pillar_processor",
       "direction": "down",
       "pillar_length": 128,
@@ -51,7 +60,10 @@
             "Name": "minecraft:chain"
           }
         }
-      ]
+      ],
+      "original_replaced_block": {
+        "Name": "minecraft:chain"
+      }
     },
     {
       "processor_type": "moogs_structures:spawner_randomizing_processor",
