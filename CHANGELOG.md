@@ -2,6 +2,32 @@
 
 ---
 
+## [3.1.0] - 2026-09-13
+
+### Added
+- Optional setting to replace the vanilla nether fortress with the mega fortress.
+- Each structure in the Moog's Structures config screen now has a preview button.
+
+### Fixed
+- The chains that the mega fortresses upper walkways are hanging from no longer have missing sections.
+- Paintings and item frames no longer disappear from the mega fortress and the dragon arena on certain mc versions.
+- The mega fortress's painting now displays properly on every supported version, and has become
+  a collage of smaller paintings rather than a single large one.
+- The large arena's vaults now give their intended rewards instead of generic trial chamber loot.
+- Enchanted books in the fortress library are now actually enchanted.
+- Armour found in the ruined fortress chests is now enchanted as intended.
+- The arena bowman and the pit vanguard no longer wear damaged armour.
+- The spawners in the medium houses were doing nothing and now spawn piglins as intended
+- Spawners in the large house and the nether brick ruins now draw from a mix of mobs
+  instead of always spawning the same one
+- Every structure has been rebuilt for each Minecraft version it supports, fixing a range of
+  small visual and loading problems.
+
+### Changed
+- Now requires Moog's Structure Lib **v3.1.2** or newer.
+
+---
+
 ## 3.0.0-alpha.2 — 2026-06-03
 
 ### Fixed
