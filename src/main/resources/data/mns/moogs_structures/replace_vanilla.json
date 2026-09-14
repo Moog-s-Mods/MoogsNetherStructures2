@@ -1,0 +1,21 @@
+{
+    "structures": {
+        "mod_name": "Moog's Nether Structures",
+        "mod_slug": "nether-structures"
+    },
+    "presets": [
+        {
+            "id": "replace_nether_fortress",
+            "name": "Replace Nether Fortress",
+            "description": "Replace the vanilla nether fortress with Moog's mega fortress. The mega fortress's common chests use the vanilla nether fortress loot so mod loot injections still show up.",
+            "default_enabled": false,
+            "replacements": [
+                {
+                    "vanilla_key": "fortress",
+                    "vanilla_structure": "minecraft:fortress",
+                    "replacement_structure": "mns:mega_fortress"
+                }
+            ]
+        }
+    ]
+}
