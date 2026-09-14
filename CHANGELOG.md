@@ -23,6 +23,9 @@
 - The spawners in the medium houses were doing nothing and now spawn piglins as intended
 - Spawners in the large house and the nether brick ruins now draw from a mix of mobs
   instead of always spawning the same one
+- Chests and barrels that gave identical loot in every world now roll their loot properly
+- The large crossing and the lower walkways in the mega fortress are no longer cut short
+  when they run into terrain
 - Every structure has been rebuilt for each Minecraft version it supports, fixing a range of
   small visual and loading problems.
 
