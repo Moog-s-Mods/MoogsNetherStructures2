@@ -16,8 +16,7 @@
               "add": false
             },
             {
-              "function": "minecraft:enchant_randomly",
-              "options": "#minecraft:on_random_loot"
+              "function": "minecraft:enchant_randomly"
             }
           ]
         },
@@ -48,8 +47,7 @@
               "add": false
             },
             {
-              "function": "minecraft:enchant_randomly",
-              "options": "#minecraft:on_random_loot"
+              "function": "minecraft:enchant_randomly"
             }
           ]
         },
@@ -140,7 +138,6 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "options": "#minecraft:on_random_loot",
               "enchantments": [
                 "minecraft:soul_speed"
               ]
@@ -200,7 +197,6 @@
             },
             {
               "function": "minecraft:enchant_randomly",
-              "options": "#minecraft:on_random_loot",
               "enchantments": [
                 "minecraft:soul_speed"
               ]
@@ -217,8 +213,7 @@
               "add": false
             },
             {
-              "function": "minecraft:enchant_randomly",
-              "options": "#minecraft:on_random_loot"
+              "function": "minecraft:enchant_randomly"
             }
           ]
         },

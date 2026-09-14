@@ -104,7 +104,6 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "only_compatible": true,
               "conditions": [
                 {
                   "condition": "minecraft:random_chance",
