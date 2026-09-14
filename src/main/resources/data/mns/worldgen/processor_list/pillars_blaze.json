@@ -1,6 +1,15 @@
 {
   "processors": [
     {
+      "processor_type": "moogs_structures:vanilla_loot_swap_processor",
+      "modid": "mns",
+      "vanilla_key": "fortress",
+      "seed_strategy": "randomize",
+      "loot_table_mapping": {
+        "mns:chests/mega_fortress/intact": "minecraft:chests/nether_bridge"
+      }
+    },
+    {
       "processor_type": "moogs_structures:pillar_processor",
       "direction": "down",
       "pillar_length": 128,
@@ -44,15 +53,25 @@
       "pillar_length": 60,
       "pillar_trigger_and_replacements": [
         {
-          "trigger": { "Name": "minecraft:lime_stained_glass" },
-          "replacement": { "Name": "minecraft:chain" }
+          "trigger": {
+            "Name": "minecraft:lime_stained_glass"
+          },
+          "replacement": {
+            "Name": "minecraft:chain"
+          }
         }
-      ]
+      ],
+      "original_replaced_block": {
+        "Name": "minecraft:chain"
+      }
     },
     {
       "processor_type": "moogs_structures:spawner_randomizing_processor",
       "weighted_entities": [
-        { "entity": "minecraft:blaze", "weight": 1 }
+        {
+          "entity": "minecraft:blaze",
+          "weight": 1
+        }
       ],
       "min_spawn_delay": 200,
       "max_spawn_delay": 800,
