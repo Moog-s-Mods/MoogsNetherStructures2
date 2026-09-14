@@ -6,14 +6,13 @@
       "weight": 1,
       "element": {
         "element_type": "moogs_structures:versioned_single_pool_element",
-        "location": "mns:mega_fortress/crossings/medium/medium_crossing_east_2",
-        "processors": "mns:pillars",
-        "projection": "rigid",
+        "location": "mns:1_21_9/mega_fortress/crossings/medium/medium_crossing_east_2",
         "locations": {
-          "1.21-1.21.8": "mns:mega_fortress/crossings/medium/medium_crossing_east_2",
-          "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/crossings/medium/medium_crossing_east_2",
-          "26.1-26.2": "mns:mega_fortress/v1_21_9/crossings/medium/medium_crossing_east_2"
-        }
+          "1.21-1.21.8": "mns:1_21_0/mega_fortress/crossings/medium/medium_crossing_east_2",
+          "1.21.9-26.2": "mns:1_21_9/mega_fortress/crossings/medium/medium_crossing_east_2"
+        },
+        "processors": "mns:pillars",
+        "projection": "rigid"
       }
     }
   ]

@@ -1,25 +1,17 @@
 {
   "name": "mns:smoking_shrine_start_pool",
-
   "fallback": "minecraft:empty",
-
   "elements": [
     {
-
       "weight": 1,
       "element": {
-
         "location": "mns:1_21_9/smoking_shrine",
         "locations": {
-          "1.21-1.21.8": "mns:smoking_shrine",
-          "1.21.9-1.21.11": "mns:1_21_9/smoking_shrine",
-          "26.1-26.2": "mns:1_21_9/smoking_shrine"
+          "1.21-1.21.8": "mns:1_21_0/smoking_shrine",
+          "1.21.9-26.2": "mns:1_21_9/smoking_shrine"
         },
-
         "processors": "minecraft:empty",
-
         "projection": "rigid",
-
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }

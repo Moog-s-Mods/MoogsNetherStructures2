@@ -1,21 +1,18 @@
 {
   "name": "mns:medium_house_start_pool",
-
   "fallback": "minecraft:empty",
-
   "elements": [
     {
-
       "weight": 1,
       "element": {
-
-        "location": "mns:houses/medium_house_1",
-
-        "processors": "minecraft:empty",
-
+        "location": "mns:1_21_5/houses/medium_house_1",
+        "locations": {
+          "1.21-1.21.4": "mns:1_21_0/houses/medium_house_1",
+          "1.21.5-26.2": "mns:1_21_5/houses/medium_house_1"
+        },
+        "processors": "mns:piglin_spawners",
         "projection": "rigid",
-
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
   ]

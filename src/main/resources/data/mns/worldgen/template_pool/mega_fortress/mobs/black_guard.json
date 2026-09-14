@@ -5,10 +5,11 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:mega_fortress/mobs/black_guard",
+        "location": "mns:1_21_5/mega_fortress/mobs/black_guard",
         "locations": {
-          "1.21-1.21.4": "mns:mega_fortress/mobs/1.21/black_guard",
-          "1.21.5-26.2": "mns:mega_fortress/mobs/black_guard"
+          "1.21-1.21.1": "mns:1_21_0/mega_fortress/mobs/black_guard",
+          "1.21.2-1.21.4": "mns:1_21_2/mega_fortress/mobs/black_guard",
+          "1.21.5-26.2": "mns:1_21_5/mega_fortress/mobs/black_guard"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

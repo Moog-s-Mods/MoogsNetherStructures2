@@ -1,21 +1,17 @@
 {
   "name": "mns:lava_pool/start_pool",
-
   "fallback": "minecraft:empty",
-
   "elements": [
     {
-
       "weight": 1,
       "element": {
-
-        "location": "mns:lava_pool",
-
+        "location": "mns:1_21_0/lava_pool",
+        "locations": {
+          "1.21-26.2": "mns:1_21_0/lava_pool"
+        },
         "processors": "minecraft:empty",
-
         "projection": "rigid",
-
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
   ]

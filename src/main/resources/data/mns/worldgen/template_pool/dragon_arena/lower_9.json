@@ -5,10 +5,13 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:dragon_arena/lower_9",
+        "location": "mns:1_21_0/dragon_arena/lower_9",
+        "locations": {
+          "1.21-26.2": "mns:1_21_0/dragon_arena/lower_9"
+        },
         "processors": "minecraft:empty",
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
   ]

@@ -5,10 +5,12 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:mega_arenas/mobs/drakebone_tyrant",
+        "location": "mns:1_21_6/mega_arenas/mobs/drakebone_tyrant",
         "locations": {
-          "1.21-1.21.4": "mns:mega_arenas/mobs/1.21/drakebone_tyrant",
-          "1.21.5-26.2": "mns:mega_arenas/mobs/drakebone_tyrant"
+          "1.21-1.21.1": "mns:1_21_0/mega_arenas/mobs/drakebone_tyrant",
+          "1.21.2-1.21.4": "mns:1_21_2/mega_arenas/mobs/drakebone_tyrant",
+          "1.21.5": "mns:1_21_5/mega_arenas/mobs/drakebone_tyrant",
+          "1.21.6-26.2": "mns:1_21_6/mega_arenas/mobs/drakebone_tyrant"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

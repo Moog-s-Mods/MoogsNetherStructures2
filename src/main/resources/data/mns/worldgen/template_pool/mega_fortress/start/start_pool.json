@@ -6,7 +6,14 @@
       "weight": 1,
       "element": {
         "element_type": "moogs_structures:versioned_single_pool_element",
-        "location": "mns:mega_fortress/start/mega_crossing_center_1",
+        "location": "mns:1_21_9/mega_fortress/start/mega_crossing_center_1",
+        "locations": {
+          "1.21-1.21.1": "mns:1_21_0/mega_fortress/start/mega_crossing_center_1",
+          "1.21.2-1.21.4": "mns:1_21_2/mega_fortress/start/mega_crossing_center_1",
+          "1.21.5": "mns:1_21_5/mega_fortress/start/mega_crossing_center_1",
+          "1.21.6-1.21.8": "mns:1_21_6/mega_fortress/start/mega_crossing_center_1",
+          "1.21.9-26.2": "mns:1_21_9/mega_fortress/start/mega_crossing_center_1"
+        },
         "processors": "mns:pillars_armored",
         "projection": "rigid",
         "enhanced_terrain_adaptation": {
@@ -17,12 +24,6 @@
           "padding": {
             "bottom": 4
           }
-        },
-        "locations": {
-          "1.21-1.21.5": "mns:mega_fortress/start/mega_crossing_center_1",
-          "1.21.6-1.21.8": "mns:mega_fortress/v1_21_6/start/mega_crossing_center_1",
-          "1.21.9-1.21.11": "mns:mega_fortress/v1_21_9/start/mega_crossing_center_1",
-          "26.1-26.2": "mns:mega_fortress/v1_21_9/start/mega_crossing_center_1"
         }
       }
     }

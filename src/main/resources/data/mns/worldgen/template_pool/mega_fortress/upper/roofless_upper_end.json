@@ -5,8 +5,11 @@
     {
       "weight": 1,
       "element": {
-        "element_type": "moogs_structures:mirroring_single_pool_element",
-        "location": "mns:mega_fortress/upper/end_1",
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:1_21_0/mega_fortress/upper/end_1",
+        "locations": {
+          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_1"
+        },
         "processors": "mns:pillars",
         "projection": "rigid",
         "mirror": "NONE",
@@ -21,8 +24,11 @@
     {
       "weight": 1,
       "element": {
-        "element_type": "moogs_structures:mirroring_single_pool_element",
-        "location": "mns:mega_fortress/upper/end_2",
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:1_21_0/mega_fortress/upper/end_2",
+        "locations": {
+          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_2"
+        },
         "processors": "mns:pillars",
         "projection": "rigid",
         "mirror": "NONE",
@@ -37,8 +43,11 @@
     {
       "weight": 1,
       "element": {
-        "element_type": "moogs_structures:mirroring_single_pool_element",
-        "location": "mns:mega_fortress/upper/end_3",
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:1_21_0/mega_fortress/upper/end_3",
+        "locations": {
+          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_3"
+        },
         "processors": "mns:pillars",
         "projection": "rigid",
         "mirror": "NONE",
@@ -53,8 +62,11 @@
     {
       "weight": 1,
       "element": {
-        "element_type": "moogs_structures:mirroring_single_pool_element",
-        "location": "mns:mega_fortress/upper/end_4",
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:1_21_0/mega_fortress/upper/end_4",
+        "locations": {
+          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_4"
+        },
         "processors": "mns:pillars",
         "projection": "rigid",
         "mirror": "NONE",
