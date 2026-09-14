@@ -1,6 +1,6 @@
 {
   "name": "mns:mega_fortress/crossings/small/lower/small_crossing_west_lower",
-  "fallback": "minecraft:empty",
+  "fallback": "mns:mega_fortress/crossings/small/lower/small_crossing_west_lower",
   "elements": [
     {
       "weight": 1,

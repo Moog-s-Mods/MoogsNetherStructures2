@@ -55,13 +55,25 @@
     "band": {
       "bottom": 17,
       "top": 23,
-      "piece_heights": [24, 25, 27]
+      "piece_heights": [
+        24,
+        25,
+        27
+      ]
     }
   },
   "pools_that_ignore_boundaries": [
     "mns:mega_fortress/ends/roofless_end",
     "mns:mega_fortress/ends/roofed_end",
     "mns:mega_fortress/ends/junction_ends/junction_end",
-    "mns:mega_fortress/upper/roofless_upper_end"
+    "mns:mega_fortress/upper/roofless_upper_end",
+    "mns:mega_fortress/crossings/small/lower/small_crossing_south_lower",
+    "mns:mega_fortress/crossings/small/lower/small_crossing_west_lower",
+    "mns:mega_fortress/crossings/small/lower/small_crossing_north_lower",
+    "mns:mega_fortress/crossings/small/lower/small_crossing_east_lower",
+    "mns:mega_fortress/crossings/large/large_crossing_north",
+    "mns:mega_fortress/crossings/large/large_crossing_south",
+    "mns:mega_fortress/crossings/large/large_crossing_east",
+    "mns:mega_fortress/crossings/large/large_crossing_west"
   ]
 }

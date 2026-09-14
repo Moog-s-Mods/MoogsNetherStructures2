@@ -1,6 +1,6 @@
 {
   "name": "mns:mega_fortress/crossings/large/large_crossing_north",
-  "fallback": "mns:mega_fortress/ends/junction_ends/junction_end",
+  "fallback": "mns:mega_fortress/crossings/large/large_crossing_north",
   "elements": [
     {
       "weight": 1,
