@@ -13,7 +13,13 @@
                 {
                     "vanilla_key": "fortress",
                     "vanilla_structure": "minecraft:fortress",
-                    "replacement_structure": "mns:mega_fortress"
+                    "replacement_structure": "mns:mega_fortress",
+                    "options": {
+                        "alias_lookups": true,
+                        "inherit_spawn_overrides": true,
+                        "redirect_locate": true,
+                        "mirror_tags": true
+                    }
                 }
             ]
         }

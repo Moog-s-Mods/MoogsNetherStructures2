@@ -9,6 +9,12 @@
     "type": "moogs_structures:advanced_random_spread",
     "salt": 384729103,
     "spacing": 116,
-    "separation": 76
+    "separation": 76,
+    "when_replacing": {
+      "modid": "mns",
+      "vanilla_key": "fortress",
+      "spacing": 30,
+      "separation": 12
+    }
   }
 }
