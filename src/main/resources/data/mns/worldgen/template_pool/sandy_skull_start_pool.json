@@ -5,10 +5,14 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:sandy_skull",
+        "location": "mns:1_20_5/sandy_skull",
+        "locations": {
+          "1.20-1.20.4": "mns:1_20_0/sandy_skull",
+          "1.20.5-1.20.6": "mns:1_20_5/sandy_skull"
+        },
         "processors": "minecraft:empty",
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
   ]

@@ -5,10 +5,15 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:ruins/circle_blackstone",
-        "processors": "minecraft:empty",
+        "location": "mns:1_20_5/ruins/circle_blackstone",
+        "locations": {
+          "1.20-1.20.1": "mns:1_20_0/ruins/circle_blackstone",
+          "1.20.2-1.20.4": "mns:1_20_2/ruins/circle_blackstone",
+          "1.20.5-1.20.6": "mns:1_20_5/ruins/circle_blackstone"
+        },
+        "processors": "mns:wither_skeleton_spawners",
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
   ]

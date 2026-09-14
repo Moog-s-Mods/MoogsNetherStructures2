@@ -5,9 +5,12 @@
     {
       "weight": 1,
       "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "mns:large_arena/r1",
-        "processors": "mns:arena_pillars",
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:1_20_0/large_arena/r1",
+        "locations": {
+          "1.20-1.20.6": "mns:1_20_0/large_arena/r1"
+        },
+        "processors": "mns:arena_pillars_vault_loot",
         "projection": "rigid"
       }
     }

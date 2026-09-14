@@ -5,10 +5,14 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:dragon_arena/c1",
+        "location": "mns:1_20_5/dragon_arena/c1",
+        "locations": {
+          "1.20-1.20.4": "mns:1_20_0/dragon_arena/c1",
+          "1.20.5-1.20.6": "mns:1_20_5/dragon_arena/c1"
+        },
         "processors": "mns:dragon_arena_pillars",
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
   ]

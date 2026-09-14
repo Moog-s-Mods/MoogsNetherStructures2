@@ -5,8 +5,13 @@
     {
       "weight": 1,
       "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "mns:mega_fortress/start/mega_crossing_west_straight_1",
+        "element_type": "moogs_structures:versioned_single_pool_element",
+        "location": "mns:1_20_5/mega_fortress/start/mega_crossing_west_straight_1",
+        "locations": {
+          "1.20-1.20.2": "mns:1_20_0/mega_fortress/start/mega_crossing_west_straight_1",
+          "1.20.3-1.20.4": "mns:1_20_3/mega_fortress/start/mega_crossing_west_straight_1",
+          "1.20.5-1.20.6": "mns:1_20_5/mega_fortress/start/mega_crossing_west_straight_1"
+        },
         "processors": "mns:pillars",
         "projection": "rigid",
         "enhanced_terrain_adaptation": {
