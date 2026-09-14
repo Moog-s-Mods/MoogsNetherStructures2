@@ -5,7 +5,10 @@
 ## [3.1.0] - 2026-09-13
 
 ### Added
-- Optional setting to replace the vanilla nether fortress with the mega fortress.
+- Optional setting to replace the vanilla nether fortress with the mega fortress. It is off by default and can be toggled from the Moogs Structures config (in game, or in the config file). Changes apply when you reload the world.
+  - While it is on, the mega fortress counts as a nether fortress: the "A Terrible Fortress" advancement, wither skeleton and blaze spawning on nether bricks, `/locate` and other mods' fortress checks all work inside it.
+  - The mega fortress generates about as often as the vanilla fortress would have while it is replacing it, instead of at its usual rarity.
+  - Its common chests use the vanilla nether fortress loot so items other mods add to fortress chests still show up.
 - Each structure in the Moog's Structures config screen now has a preview button.
 
 ### Fixed
@@ -24,7 +27,7 @@
   small visual and loading problems.
 
 ### Changed
-- Now requires Moog's Structure Lib **v3.1.2** or newer.
+- Now requires Moog's Structure Lib **v3.3.0** or newer.
 
 ---
 
