@@ -2,7 +2,7 @@
 
 ---
 
-## [3.1.0] - 2026-09-13
+## [3.1.0] - 2026-09-15
 
 ### Added
 - Optional setting to replace the vanilla nether fortress with the mega fortress. It is off by default and can be toggled from the Moogs Structures config (in game, or in the config file). Changes apply when you reload the world.
