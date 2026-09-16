@@ -8,7 +8,7 @@
         "location": "mns:1_21_9/mega_fortress/forks/roofed_fork_side_2_4",
         "locations": {
           "1.21-1.21.8": "mns:1_21_0/mega_fortress/forks/roofed_fork_side_2_4",
-          "1.21.9-26.2": "mns:1_21_9/mega_fortress/forks/roofed_fork_side_2_4"
+          "1.21.9-26.3": "mns:1_21_9/mega_fortress/forks/roofed_fork_side_2_4"
         },
         "processors": "mns:pillars",
         "projection": "rigid",

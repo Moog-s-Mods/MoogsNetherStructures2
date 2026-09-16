@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/nature/medium_crimson_fungus_1",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/nature/medium_crimson_fungus_1"
+          "1.21-26.3": "mns:1_21_0/nature/medium_crimson_fungus_1"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

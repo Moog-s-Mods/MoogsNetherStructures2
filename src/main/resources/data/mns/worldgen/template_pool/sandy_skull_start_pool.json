@@ -6,7 +6,7 @@
       "element": {
         "location": "mns:1_21_0/sandy_skull",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/sandy_skull"
+          "1.21-26.3": "mns:1_21_0/sandy_skull"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/large_arena/r2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/large_arena/r2"
+          "1.21-26.3": "mns:1_21_0/large_arena/r2"
         },
         "processors": "mns:large_arena_pillars",
         "projection": "rigid",

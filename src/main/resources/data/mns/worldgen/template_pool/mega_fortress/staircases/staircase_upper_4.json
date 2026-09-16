@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/mega_fortress/staircases/staircase_upper_4",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/staircases/staircase_upper_4"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/staircases/staircase_upper_4"
         },
         "processors": "mns:pillars",
         "projection": "rigid",

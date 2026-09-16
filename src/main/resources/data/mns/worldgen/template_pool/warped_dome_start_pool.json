@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/warped_dome",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/warped_dome"
+          "1.21-26.3": "mns:1_21_0/warped_dome"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

@@ -6,7 +6,7 @@
       "element": {
         "location": "mns:1_21_0/shrine",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/shrine"
+          "1.21-26.3": "mns:1_21_0/shrine"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

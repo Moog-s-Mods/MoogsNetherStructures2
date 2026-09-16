@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/nether_wart_farm",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/nether_wart_farm"
+          "1.21-26.3": "mns:1_21_0/nether_wart_farm"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

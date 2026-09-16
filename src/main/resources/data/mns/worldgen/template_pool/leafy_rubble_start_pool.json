@@ -6,7 +6,7 @@
       "element": {
         "location": "mns:1_21_0/ruins/leafy_rubble",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/ruins/leafy_rubble"
+          "1.21-26.3": "mns:1_21_0/ruins/leafy_rubble"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

@@ -6,7 +6,7 @@
       "element": {
         "location": "mns:1_21_0/ruins/circle_blackstone",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/ruins/circle_blackstone"
+          "1.21-26.3": "mns:1_21_0/ruins/circle_blackstone"
         },
         "processors": "mns:wither_skeleton_spawners",
         "projection": "rigid",

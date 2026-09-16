@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/dragon_arena/lower_11",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/dragon_arena/lower_11"
+          "1.21-26.3": "mns:1_21_0/dragon_arena/lower_11"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

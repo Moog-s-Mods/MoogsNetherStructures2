@@ -8,7 +8,7 @@
         "location": "mns:1_21_9/giant_skull",
         "locations": {
           "1.21-1.21.8": "mns:1_21_0/giant_skull",
-          "1.21.9-26.2": "mns:1_21_9/giant_skull"
+          "1.21.9-26.3": "mns:1_21_9/giant_skull"
         },
         "processors": "mns:wither_skeleton_spawners",
         "projection": "rigid",

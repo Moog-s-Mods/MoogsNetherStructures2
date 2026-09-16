@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/ruins/medium_blackstone",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/ruins/medium_blackstone"
+          "1.21-26.3": "mns:1_21_0/ruins/medium_blackstone"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

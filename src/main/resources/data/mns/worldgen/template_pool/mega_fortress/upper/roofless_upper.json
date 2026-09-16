@@ -8,7 +8,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_1",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_1"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_1"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -26,7 +26,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_2"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_2"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -44,7 +44,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_3",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_3"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_3"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -62,7 +62,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_4",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_4"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_4"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -81,7 +81,7 @@
         "location": "mns:1_21_9/mega_fortress/upper/pillar_straight_1",
         "locations": {
           "1.21-1.21.8": "mns:1_21_0/mega_fortress/upper/pillar_straight_1",
-          "1.21.9-26.2": "mns:1_21_9/mega_fortress/upper/pillar_straight_1"
+          "1.21.9-26.3": "mns:1_21_9/mega_fortress/upper/pillar_straight_1"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -100,7 +100,7 @@
         "location": "mns:1_21_9/mega_fortress/upper/pillar_straight_2",
         "locations": {
           "1.21-1.21.8": "mns:1_21_0/mega_fortress/upper/pillar_straight_2",
-          "1.21.9-26.2": "mns:1_21_9/mega_fortress/upper/pillar_straight_2"
+          "1.21.9-26.3": "mns:1_21_9/mega_fortress/upper/pillar_straight_2"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -118,7 +118,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/corner_1",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/corner_1"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/corner_1"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -136,7 +136,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/corner_2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/corner_2"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/corner_2"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -154,7 +154,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/small_junction_1",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/small_junction_1"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/small_junction_1"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -172,7 +172,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/small_junction_2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/small_junction_2"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/small_junction_2"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -190,7 +190,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/small_crossing_1",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/small_crossing_1"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/small_crossing_1"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -208,7 +208,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_1",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_1"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_1"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -227,7 +227,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_2"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_2"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -246,7 +246,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_3",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_3"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_3"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -265,7 +265,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_4",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_4"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_4"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -284,7 +284,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_5",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_5"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_5"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -303,7 +303,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_6",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_6"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_6"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -322,7 +322,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_7",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_7"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_7"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -341,7 +341,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/straight_8",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/straight_8"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/straight_8"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -360,7 +360,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/small_junction_3",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/small_junction_3"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/small_junction_3"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -379,7 +379,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/small_junction_4",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/small_junction_4"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/small_junction_4"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -399,7 +399,7 @@
         "location": "mns:1_21_9/mega_fortress/upper/pillar_straight_3",
         "locations": {
           "1.21-1.21.8": "mns:1_21_0/mega_fortress/upper/pillar_straight_3",
-          "1.21.9-26.2": "mns:1_21_9/mega_fortress/upper/pillar_straight_3"
+          "1.21.9-26.3": "mns:1_21_9/mega_fortress/upper/pillar_straight_3"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -418,7 +418,7 @@
         "location": "mns:1_21_9/mega_fortress/upper/pillar_straight_4",
         "locations": {
           "1.21-1.21.8": "mns:1_21_0/mega_fortress/upper/pillar_straight_4",
-          "1.21.9-26.2": "mns:1_21_9/mega_fortress/upper/pillar_straight_4"
+          "1.21.9-26.3": "mns:1_21_9/mega_fortress/upper/pillar_straight_4"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -436,7 +436,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/corner_3",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/corner_3"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/corner_3"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -455,7 +455,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/corner_4",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/corner_4"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/corner_4"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -474,7 +474,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/small_crossing_2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/small_crossing_2"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/small_crossing_2"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -493,7 +493,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_5",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_5"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_5"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -512,7 +512,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_6",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_6"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_6"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -531,7 +531,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_7",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_7"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_7"
         },
         "processors": "mns:pillars",
         "projection": "rigid",
@@ -550,7 +550,7 @@
         "element_type": "moogs_structures:versioned_single_pool_element",
         "location": "mns:1_21_0/mega_fortress/upper/end_8",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/mega_fortress/upper/end_8"
+          "1.21-26.3": "mns:1_21_0/mega_fortress/upper/end_8"
         },
         "processors": "mns:pillars",
         "projection": "rigid",

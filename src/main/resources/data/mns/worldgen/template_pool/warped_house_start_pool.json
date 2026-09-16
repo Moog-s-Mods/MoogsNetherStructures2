@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/houses/warped_house_1",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/houses/warped_house_1"
+          "1.21-26.3": "mns:1_21_0/houses/warped_house_1"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -19,7 +19,7 @@
       "element": {
         "location": "mns:1_21_0/houses/warped_house_2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/houses/warped_house_2"
+          "1.21-26.3": "mns:1_21_0/houses/warped_house_2"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -31,7 +31,7 @@
       "element": {
         "location": "mns:1_21_0/houses/warped_house_3",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/houses/warped_house_3"
+          "1.21-26.3": "mns:1_21_0/houses/warped_house_3"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -44,7 +44,7 @@
         "location": "mns:1_21_4/houses/warped_house_4",
         "locations": {
           "1.21-1.21.3": "mns:1_21_0/houses/warped_house_4",
-          "1.21.4-26.2": "mns:1_21_4/houses/warped_house_4"
+          "1.21.4-26.3": "mns:1_21_4/houses/warped_house_4"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -57,7 +57,7 @@
         "location": "mns:1_21_4/houses/warped_house_5",
         "locations": {
           "1.21-1.21.3": "mns:1_21_0/houses/warped_house_5",
-          "1.21.4-26.2": "mns:1_21_4/houses/warped_house_5"
+          "1.21.4-26.3": "mns:1_21_4/houses/warped_house_5"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -69,7 +69,7 @@
       "element": {
         "location": "mns:1_21_0/houses/warped_house_6",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/houses/warped_house_6"
+          "1.21-26.3": "mns:1_21_0/houses/warped_house_6"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

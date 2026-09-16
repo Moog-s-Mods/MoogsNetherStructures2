@@ -7,7 +7,7 @@
       "element": {
         "location": "mns:1_21_0/bridges/bridge_2",
         "locations": {
-          "1.21-26.2": "mns:1_21_0/bridges/bridge_2"
+          "1.21-26.3": "mns:1_21_0/bridges/bridge_2"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
