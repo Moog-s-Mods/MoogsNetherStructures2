@@ -2,7 +2,7 @@
 
 [![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D8LKA5N)
 
-[![Discord](https://img.shields.io/discord/869218732650688543?color=c20045&label=DISCORD&style=for-the-badge)](https://discord.com/invite/S5nffJbuvA)
+[![Discord](https://img.shields.io/discord/869218732650688543?color=c20045&label=DISCORD&style=for-the-badge)](https://moogsmods.com/discord?r=readme-mns2)
 
 [![My projects](https://img.shields.io/badge/CurseForge-projects-c20045?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/members/finndog_123/projects)
 
@@ -36,6 +36,6 @@ See all modpacks [here](https://www.modpackindex.com/modpack/finder?included_mod
 
 ![banner](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_discord.webp)
 
-The best and fastest way to get replies is to join our [Discord server](https://discord.gg/S5nffJbuvA).
+The best and fastest way to get replies is to join our [Discord server](https://moogsmods.com/discord?r=readme-mns2).
 
 [![BHsponser](https://www.bisecthosting.com/images/CF/Moogs_Nether_Structures/BH_MNS_promo.webp)](https://bisecthosting.com/moogsmods)
