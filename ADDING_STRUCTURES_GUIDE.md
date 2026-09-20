@@ -1647,7 +1647,7 @@ To check your JSON syntax:
 - **Minecraft Wiki - Jigsaw Blocks:** https://minecraft.wiki/w/Jigsaw_Block
 
 #### Community Resources
-- **MoogsStructures Discord:** https://discord.gg/S5nffJbuvA
+- **MoogsStructures Discord:** https://moogsmods.com/discord?r=github
   - Get help from the community
   - Share your structures
   - Report issues
@@ -1776,7 +1776,7 @@ We maintain a creative server that stores all structures used in the mod. This p
 3. **Label it** with a sign including your structure name and username
 
 **Need help or don't have server access?**
-- **DM @FinnDog** on the [Discord server](https://discord.gg/S5nffJbuvA)
+- **DM @FinnDog** on the [Discord server](https://moogsmods.com/discord?r=github)
 - FinnDog will help you upload it or grant you server access
 
 **Note:** 
@@ -1993,7 +1993,7 @@ Congratulations! You now know how to add structures to Moog's Nether Structures!
 ### Additional Resources
 
 - **Project GitHub:** https://github.com/FinnSetchell/MoogsNetherStructures2
-- **Discord Server:** https://discord.gg/S5nffJbuvA
+- **Discord Server:** https://moogsmods.com/discord?r=github
 - **CurseForge Page:** https://www.curseforge.com/minecraft/mc-mods/mns-moogs-nether-structures
 - **Modrinth Page:** https://modrinth.com/mod/mns-moogs-nether-structures
 
