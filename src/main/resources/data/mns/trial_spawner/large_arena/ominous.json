@@ -44,7 +44,37 @@
           "HandDropChances": [
             0.05,
             0.0
-          ]
+          ],
+          "equipment": {
+            "feet": {
+              "id": "minecraft:iron_boots",
+              "count": 1
+            },
+            "legs": {
+              "id": "minecraft:iron_leggings",
+              "count": 1
+            },
+            "chest": {
+              "id": "minecraft:iron_chestplate",
+              "count": 1
+            },
+            "head": {
+              "id": "minecraft:iron_helmet",
+              "count": 1
+            },
+            "mainhand": {
+              "id": "minecraft:iron_sword",
+              "count": 1
+            }
+          },
+          "drop_chances": {
+            "feet": 0.02,
+            "legs": 0.02,
+            "chest": 0.02,
+            "head": 0.02,
+            "mainhand": 0.05,
+            "offhand": 0.0
+          }
         }
       }
     },
@@ -87,7 +117,37 @@
           "HandDropChances": [
             0.05,
             0.0
-          ]
+          ],
+          "equipment": {
+            "feet": {
+              "id": "minecraft:iron_boots",
+              "count": 1
+            },
+            "legs": {
+              "id": "minecraft:iron_leggings",
+              "count": 1
+            },
+            "chest": {
+              "id": "minecraft:iron_chestplate",
+              "count": 1
+            },
+            "head": {
+              "id": "minecraft:iron_helmet",
+              "count": 1
+            },
+            "mainhand": {
+              "id": "minecraft:bow",
+              "count": 1
+            }
+          },
+          "drop_chances": {
+            "feet": 0.02,
+            "legs": 0.02,
+            "chest": 0.02,
+            "head": 0.02,
+            "mainhand": 0.05,
+            "offhand": 0.0
+          }
         }
       }
     }
