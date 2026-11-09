@@ -193,7 +193,6 @@
           "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:enchanted_golden_apple",
-          "options": "#minecraft:on_random_loot",
           "functions": [
             {
               "function": "minecraft:set_count",
