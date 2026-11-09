@@ -40,6 +40,20 @@
                 "max": 10
               }
             }
+          ],
+          "modifier": [
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:strength"
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 6,
+                "max": 10
+              }
+            }
           ]
         },
         {
@@ -51,7 +65,11 @@
               "function": "minecraft:set_potion",
               "id": "minecraft:strong_regeneration"
             }
-          ]
+          ],
+          "modifier": {
+            "type": "minecraft:set_potion",
+            "id": "minecraft:strong_regeneration"
+          }
         }
       ]
     }

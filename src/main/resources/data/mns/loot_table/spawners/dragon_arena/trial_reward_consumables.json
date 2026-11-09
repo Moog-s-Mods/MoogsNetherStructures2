@@ -5,13 +5,17 @@
       "rolls": 1,
       "entries": [
         { "type": "minecraft:item", "name": "minecraft:arrow", "weight": 4,
-          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 4, "max": 8 } } ] },
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 4, "max": 8 } } ],
+          "modifier": { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 4, "max": 8 } } },
         { "type": "minecraft:item", "name": "minecraft:cooked_beef", "weight": 3,
-          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } } ] },
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } } ],
+          "modifier": { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } } },
         { "type": "minecraft:item", "name": "minecraft:golden_carrot", "weight": 3,
-          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } } ] },
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } } ],
+          "modifier": { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } } },
         { "type": "minecraft:item", "name": "minecraft:potion", "weight": 2,
-          "functions": [ { "function": "minecraft:set_potion", "id": "minecraft:healing" } ] }
+          "functions": [ { "function": "minecraft:set_potion", "id": "minecraft:healing" } ],
+          "modifier": { "type": "minecraft:set_potion", "id": "minecraft:healing" } }
       ]
     }
   ],

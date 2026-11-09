@@ -9,8 +9,8 @@
         { "type": "minecraft:item", "name": "minecraft:diamond", "weight": 3 },
         { "type": "minecraft:item", "name": "minecraft:golden_apple", "weight": 8 },
         { "type": "minecraft:item", "name": "minecraft:obsidian", "weight": 12 },
-        { "type": "minecraft:item", "name": "minecraft:iron_chestplate", "weight": 5, "functions": [ { "function": "minecraft:enchant_randomly" } ] },
-        { "type": "minecraft:item", "name": "minecraft:iron_sword", "weight": 5, "functions": [ { "function": "minecraft:enchant_randomly" } ] }
+        { "type": "minecraft:item", "name": "minecraft:iron_chestplate", "weight": 5, "functions": [ { "function": "minecraft:enchant_randomly" } ], "modifier": { "type": "minecraft:enchant_randomly" } },
+        { "type": "minecraft:item", "name": "minecraft:iron_sword", "weight": 5, "functions": [ { "function": "minecraft:enchant_randomly" } ], "modifier": { "type": "minecraft:enchant_randomly" } }
       ]
     },
     {

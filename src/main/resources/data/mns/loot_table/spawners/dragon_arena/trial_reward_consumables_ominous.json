@@ -6,13 +6,25 @@
       "entries": [
         { "type": "minecraft:item", "name": "minecraft:ominous_bottle", "weight": 2 },
         { "type": "minecraft:item", "name": "minecraft:wind_charge", "weight": 3,
-          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } } ] },
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } } ],
+          "modifier": { "type": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 2, "max": 4 } } },
         { "type": "minecraft:item", "name": "minecraft:potion", "weight": 3,
-          "functions": [ { "function": "minecraft:set_potion", "id": "minecraft:strong_healing" } ] },
+          "functions": [ { "function": "minecraft:set_potion", "id": "minecraft:strong_healing" } ],
+          "modifier": { "type": "minecraft:set_potion", "id": "minecraft:strong_healing" } },
         { "type": "minecraft:item", "name": "minecraft:tipped_arrow", "weight": 2,
           "functions": [
             { "function": "minecraft:set_potion", "id": "minecraft:strength" },
             { "function": "minecraft:set_count", "count": 4 }
+          ],
+          "modifier": [
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:strength"
+            },
+            {
+              "type": "minecraft:set_count",
+              "count": 4
+            }
           ] }
       ]
     }
