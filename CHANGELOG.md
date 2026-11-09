@@ -6,6 +6,7 @@
 
 ### Fixed
 - Chests on Minecraft 26.3 now give full stacks and enchanted items, the same as on older versions
+- Skeletons and wither skeletons from the large arena's trial spawners now spawn with their iron armour and weapons on Minecraft 1.21.5 and newer
 
 ---
 
