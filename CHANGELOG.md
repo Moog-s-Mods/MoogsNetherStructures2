@@ -2,6 +2,13 @@
 
 ---
 
+## [3.1.2]
+
+### Fixed
+- Fixed the mod not loading on NeoForge 1.20.5
+
+---
+
 ## [3.1.0] - 2026-09-15
 
 ### Added
