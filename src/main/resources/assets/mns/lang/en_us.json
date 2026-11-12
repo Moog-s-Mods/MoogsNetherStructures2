@@ -5,5 +5,12 @@
   "mns.releases": "GitHub Releases",
   "mns.kofi": "Ko-fi",
   "mns.curseforge": "CurseForge",
-  "mns.modrinth": "Modrinth"
+  "mns.modrinth": "Modrinth",
+  "filled_map.mns.giant_skull_map": "Giant Skull Map",
+  "filled_map.mns.train_map": "Train Map",
+  "filled_map.mns.copper_tower_map": "Copper Tower Map",
+  "filled_map.mns.small_arena_map": "Small Arena Map",
+  "filled_map.mns.nether_tower_map": "Nether Tower Map",
+  "filled_map.mns.large_arena_map": "Large Arena Map",
+  "filled_map.mns.dragon_arena_map": "Dragon Arena Map"
 }
