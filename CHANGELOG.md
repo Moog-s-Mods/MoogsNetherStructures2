@@ -4,6 +4,9 @@
 
 ## [3.1.2]
 
+### Added
+- Nether chests can hold maps that lead to the Giant Skull, the Train, the Copper Tower, the Small Arena, the Large Arena and the Dragon Arena
+
 ### Fixed
 - Fixed the mod not loading on NeoForge 1.20.5
 
