@@ -11,7 +11,7 @@
           "1.20.2-1.20.4": "mns:1_20_2/ruins/circle_blackstone",
           "1.20.5-1.20.6": "mns:1_20_5/ruins/circle_blackstone"
         },
-        "processors": "mns:wither_skeleton_spawners",
+        "processors": "mns:follow_floor_wither_skeleton_spawners",
         "projection": "rigid",
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
