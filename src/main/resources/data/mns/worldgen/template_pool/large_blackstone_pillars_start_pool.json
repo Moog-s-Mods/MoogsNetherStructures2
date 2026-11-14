@@ -11,6 +11,17 @@
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
+        "adaptation_area": {
+          "columns": [
+            { "x": [1, 2], "z": [0, 1] },
+            { "x": [9, 10], "z": [1, 1] },
+            { "x": [4, 6], "z": [4, 6] },
+            { "x": [0, 1], "z": [5, 7] },
+            { "x": [2, 3], "z": [9, 11] },
+            { "x": [11, 12], "z": [9, 12] }
+          ],
+          "outside_follows_ground": true
+        },
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
