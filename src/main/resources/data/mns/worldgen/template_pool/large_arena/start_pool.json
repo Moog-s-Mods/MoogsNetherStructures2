@@ -10,7 +10,7 @@
         "locations": {
           "1.20-1.20.6": "mns:1_20_0/large_arena/r1"
         },
-        "processors": "mns:large_arena_pillars_vault_loot",
+        "processors": "mns:arena_pillars_vault_loot",
         "projection": "rigid"
       }
     }

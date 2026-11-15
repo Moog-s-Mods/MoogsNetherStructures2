@@ -11,7 +11,7 @@
           "1.20-1.20.4": "mns:1_20_0/large_arena/r3",
           "1.20.5-1.20.6": "mns:1_20_5/large_arena/r3"
         },
-        "processors": "mns:large_arena_pillars",
+        "processors": "mns:arena_pillars",
         "projection": "rigid"
       }
     }
