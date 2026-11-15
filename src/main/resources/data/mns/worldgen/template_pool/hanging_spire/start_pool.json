@@ -1,0 +1,19 @@
+{
+  "name": "mns:hanging_spire/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_21_4/hanging/hanging_spire",
+        "locations": {
+          "1.21-1.21.3": "mns:1_21_0/hanging/hanging_spire",
+          "1.21.4-26.3": "mns:1_21_4/hanging/hanging_spire"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}
