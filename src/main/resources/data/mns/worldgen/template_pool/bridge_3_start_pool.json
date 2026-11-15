@@ -9,7 +9,7 @@
         "locations": {
           "1.21-26.3": "mns:1_21_0/bridges/bridge_3"
         },
-        "processors": "minecraft:empty",
+        "processors": "mns:bridge_pillars",
         "projection": "rigid",
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
