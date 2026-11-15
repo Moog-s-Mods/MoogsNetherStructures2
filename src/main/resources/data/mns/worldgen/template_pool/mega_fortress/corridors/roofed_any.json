@@ -121,7 +121,7 @@
           "1.20-1.20.4": "mns:1_20_0/mega_fortress/forks/roofed_fork_main_1",
           "1.20.5-1.20.6": "mns:1_20_5/mega_fortress/forks/roofed_fork_main_1"
         },
-        "processors": "mns:pillars",
+        "processors": "mns:pillars_armored",
         "projection": "rigid",
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
@@ -134,7 +134,7 @@
           "1.20-1.20.4": "mns:1_20_0/mega_fortress/forks/roofed_fork_main_2",
           "1.20.5-1.20.6": "mns:1_20_5/mega_fortress/forks/roofed_fork_main_2"
         },
-        "processors": "mns:pillars",
+        "processors": "mns:pillars_armored",
         "projection": "rigid",
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
