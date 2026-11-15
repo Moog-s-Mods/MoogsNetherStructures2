@@ -5,10 +5,8 @@
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "LOWEST_LAND",
   "cannot_spawn_in_liquid": false,
-  "y_allowance": {
-    "min_y_allowed": 30,
-    "max_y_allowed": 32
-  },
+  "min_y_allowed": 30,
+  "max_y_allowed": 32,
   "step": "surface_structures",
   "terrain_adaptation": "none",
   "start_height": {
