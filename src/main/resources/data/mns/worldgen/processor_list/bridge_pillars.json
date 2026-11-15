@@ -1,0 +1,25 @@
+{
+  "processors": [
+    {
+      "processor_type": "moogs_structures:pillar_processor",
+      "direction": "down",
+      "pillar_length": 128,
+      "pillar_trigger_and_replacements": [
+        {
+          "trigger": {
+            "Name": "minecraft:basalt",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "replacement": {
+            "Name": "minecraft:basalt",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
