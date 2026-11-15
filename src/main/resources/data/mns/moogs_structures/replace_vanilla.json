@@ -8,7 +8,7 @@
             "id": "replace_nether_fortress",
             "name": "Replace Nether Fortress",
             "description": "Replace the vanilla nether fortress with Moog's mega fortress. The mega fortress's common chests use the vanilla nether fortress loot so mod loot injections still show up.",
-            "default_enabled": false,
+            "default_enabled": true,
             "replacements": [
                 {
                     "vanilla_key": "fortress",
