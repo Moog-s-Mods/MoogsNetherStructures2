@@ -528,8 +528,31 @@
           ]
         },
         {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "mns:on_nether_tower_maps",
+              "decoration": "red_x",
+              "zoom": 2,
+              "search_radius": 1,
+              "skip_existing_chunks": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "filled_map.mns.nether_tower_map",
+                "fallback": "Nether Tower Map"
+              },
+              "target": "item_name"
+            }
+          ]
+        },
+        {
           "type": "minecraft:empty",
-          "weight": 19
+          "weight": 18
         }
       ]
     }
