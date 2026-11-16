@@ -5,10 +5,18 @@
 ## [3.1.2]
 
 ### Added
-- Nether chests can hold maps that lead to the Giant Skull, the Train, the Copper Tower, the Small Arena, the Large Arena and the Dragon Arena
+- Nether chests can hold maps that lead to the Giant Skull, the Train, the Copper Tower, the Nether Tower, the Small Arena, the Large Arena and the Dragon Arena
 
 ### Fixed
 - Fixed the mod not loading on NeoForge 1.20.5
+- Bridges now sit down in lava lakes instead of on ledges above them
+- Nether Towers are now much rarer and Nether Wart Farms a little more common
+- The large arena's spawners now spawn wither skeletons and skeletons instead of zombified piglins and magma cubes
+- Armour stands in the mega fortress's roofed forks now wear their armour
+- Crimson structures no longer spawn in warped forests, nor warped structures in crimson forests
+
+### Changed
+- Now requires Moog's Structure Lib 4.0.0 or newer
 
 ---
 
