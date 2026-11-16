@@ -6,10 +6,15 @@
 
 ### Added
 - Nether chests can hold maps that lead to the Giant Skull, the Train, the Copper Tower, the Nether Tower, the Small Arena, the Large Arena and the Dragon Arena
+- Structures now spawn in Better Nether and Incendium biomes, and in other mods' Nether biomes
 
 ### Fixed
 - Chests on Minecraft 26.3 now give full stacks and enchanted items, the same as on older versions
 - Skeletons and wither skeletons from the large arena's trial spawners now spawn with their iron armour and weapons on Minecraft 1.21.5 and newer
+- Two of the bridges no longer generate on top of each other
+
+### Changed
+- Now requires Moog's Structure Lib 4.0.0 or newer
 
 ---
 
