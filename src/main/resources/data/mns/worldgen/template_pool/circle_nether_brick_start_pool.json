@@ -12,6 +12,19 @@
         },
         "processors": "mns:circle_nether_brick_spawners",
         "projection": "rigid",
+        "adaptation_area": {
+          "columns": [
+            { "x": [6, 8], "z": [0, 2] },
+            { "x": [2, 6], "z": [2, 4] },
+            { "x": [11, 13], "z": [2, 3] },
+            { "x": [7, 13], "z": [6, 13] },
+            { "x": [14, 16], "z": [6, 8] },
+            { "x": [0, 2], "z": [7, 9] },
+            { "x": [2, 3], "z": [12, 13] },
+            { "x": [6, 8], "z": [14, 16] }
+          ],
+          "outside_follows_ground": true
+        },
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }
