@@ -12,6 +12,8 @@ Forge support was dropped after 1.20.4
 ### ABOUT
 Moogs Nether Structures adds new and exciting structures to the Nether dimension in Minecraft. You'll find new loot, tough enemies, and fun challenges as you explore. This mod works great on its own or with our main structure mod, MVS. It fits well into any modpack and keeps the vanilla feel of the game. Jump into the Nether and see what you can discover!
 
+By default, the mega fortress replaces the vanilla nether fortress. This can be turned off in Moog's Structure Lib's config.
+
 [![Browse every structure live in 3D](https://i.moogsmods.com/images/f8fe835413394a76b10a678afefea30f.png)](https://previews.moogsmods.com/nether-structures/1.21.1/)
 
 See our main structure mod, MVS, [here](https://www.curseforge.com/minecraft/mc-mods/moogs-voyager-structures).
