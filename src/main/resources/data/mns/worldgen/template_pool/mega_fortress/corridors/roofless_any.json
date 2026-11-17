@@ -193,7 +193,7 @@
           "1.21.5-1.21.8": "mns:1_21_5/mega_fortress/forks/roofless_fork_main_1",
           "1.21.9-26.3": "mns:1_21_9/mega_fortress/forks/roofless_fork_main_1"
         },
-        "processors": "mns:pillars",
+        "processors": "mns:pillars_armored",
         "projection": "rigid",
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
