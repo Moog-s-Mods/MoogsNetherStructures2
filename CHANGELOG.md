@@ -6,6 +6,7 @@
 
 ### Added
 - Nether chests can hold maps that lead to the Giant Skull, the Train, the Copper Tower, the Nether Tower, the Small Arena, the Large Arena and the Dragon Arena
+- The crimson forge, crimson lava well, large house and warped house now generate on 1.20
 
 ### Fixed
 - Fixed the mod not loading on NeoForge 1.20.5
@@ -14,9 +15,14 @@
 - The large arena's spawners now spawn wither skeletons and skeletons instead of zombified piglins and magma cubes
 - Armour stands in the mega fortress's roofed forks now wear their armour
 - Crimson structures no longer spawn in warped forests, nor warped structures in crimson forests
+- The small Nether brick ruin now looks like itself instead of the blackstone one
+- The dragon arena's spawners no longer spawn zombified piglins
+- The armour stand in the mega fortress's open-air fork now wears its armour
+- Mega fortress guards in the large crossing and the small lower crossing now have room to spawn
 
 ### Changed
 - Now requires Moog's Structure Lib 4.0.0 or newer
+- The copper tower, both medium houses, the Nether Tower and the Nether Wart Farm blend into the ground more gently
 
 ---
 
