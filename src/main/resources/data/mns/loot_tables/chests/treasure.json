@@ -373,5 +373,5 @@
       ]
     }
   ],
-  "random_sequence": "minecraft:chests/bastion_treasure"
+  "random_sequence": "mns:chests/treasure"
 }
