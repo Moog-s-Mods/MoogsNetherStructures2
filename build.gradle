@@ -48,6 +48,8 @@ tasks.processResources {
             'mod_releases': modReleases,
             'structure_lib_version_range': structureLibVersionRange,
     ]
+    inputs.properties(meta)
+
     filesMatching('fabric.mod.json') { expand(meta) }
     filesMatching('quilt.mod.json') { expand(meta) }
     filesMatching('META-INF/*.toml') { expand(meta) }
