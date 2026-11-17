@@ -6,7 +6,7 @@
   "land_search_direction": "HIGHEST_LAND",
   "cannot_spawn_in_liquid": true,
   "step": "surface_structures",
-  "terrain_adaptation": "beard_box",
+  "terrain_adaptation": "beard_thin",
   "start_height": {
     "absolute": 0
   },
