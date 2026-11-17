@@ -5,6 +5,7 @@
 ## [3.1.2]
 
 ### Added
+- Five new structures: the Crimson Manor, the Warped Citadel, the Warped Tower, the Crimson Library and the Giant Ribcage
 - Nether chests can hold maps that lead to the Giant Skull, the Train, the Copper Tower, the Nether Tower, the Small Arena, the Large Arena and the Dragon Arena
 - The crimson forge, crimson lava well, large house and warped house now generate on 1.20
 

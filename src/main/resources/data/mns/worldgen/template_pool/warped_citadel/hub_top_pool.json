@@ -1,0 +1,19 @@
+{
+  "name": "mns:warped_citadel/hub_top_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/warped_citadel/hub_top",
+        "locations": {
+          "1.20-1.20.4": "mns:1_20_0/warped_citadel/hub_top",
+          "1.20.5-1.20.6": "mns:1_20_5/warped_citadel/hub_top"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

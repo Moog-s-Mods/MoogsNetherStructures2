@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mns:warped_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "moogs_structures:advanced_random_spread",
+    "salt": 492017356,
+    "spacing": 54,
+    "separation": 40
+  }
+}

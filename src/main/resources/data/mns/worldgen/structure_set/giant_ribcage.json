@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mns:giant_ribcage",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "moogs_structures:advanced_random_spread",
+    "salt": 270835164,
+    "spacing": 45,
+    "separation": 35
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "processors": [
+    {
+      "processor_type": "moogs_structures:spawner_randomizing_processor",
+      "weighted_entities": [
+        {
+          "entity": "minecraft:wither_skeleton",
+          "weight": 3
+        },
+        {
+          "entity": "minecraft:skeleton",
+          "weight": 2
+        }
+      ],
+      "min_spawn_delay": 200,
+      "max_spawn_delay": 800,
+      "spawn_count": 4,
+      "max_nearby_entities": 6,
+      "required_player_range": 16,
+      "spawn_range": 4
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:barrel",
+              "Properties": {
+                "facing": "north",
+                "open": "false"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:barrel",
+            "Properties": {
+              "facing": "north",
+              "open": "false"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "mns:chests/large_arena/main_barrel"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:barrel",
+              "Properties": {
+                "facing": "south",
+                "open": "false"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:barrel",
+            "Properties": {
+              "facing": "south",
+              "open": "false"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "mns:chests/large_arena/main_barrel"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:barrel",
+              "Properties": {
+                "facing": "east",
+                "open": "false"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:barrel",
+            "Properties": {
+              "facing": "east",
+              "open": "false"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "mns:chests/large_arena/main_barrel"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:barrel",
+              "Properties": {
+                "facing": "west",
+                "open": "false"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:barrel",
+            "Properties": {
+              "facing": "west",
+              "open": "false"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "mns:chests/large_arena/main_barrel"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:barrel",
+              "Properties": {
+                "facing": "up",
+                "open": "false"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:barrel",
+            "Properties": {
+              "facing": "up",
+              "open": "false"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "mns:chests/large_arena/main_barrel"
+          }
+        },
+        {
+          "input_predicate": {
+            "predicate_type": "minecraft:blockstate_match",
+            "block_state": {
+              "Name": "minecraft:barrel",
+              "Properties": {
+                "facing": "down",
+                "open": "false"
+              }
+            }
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:barrel",
+            "Properties": {
+              "facing": "down",
+              "open": "false"
+            }
+          },
+          "block_entity_modifier": {
+            "type": "minecraft:append_loot",
+            "loot_table": "mns:chests/large_arena/main_barrel"
+          }
+        }
+      ]
+    }
+  ]
+}
