@@ -12,6 +12,9 @@
 - Chests on Minecraft 26.3 now give full stacks and enchanted items, the same as on older versions
 - Skeletons and wither skeletons from the large arena's trial spawners now spawn with their iron armour and weapons on Minecraft 1.21.5 and newer
 - Two of the bridges no longer generate on top of each other
+- The small Nether brick ruin now looks like itself instead of the blackstone one
+- The armour stand in the mega fortress's open-air fork now wears its armour
+- Mega fortress guards in the large crossing, the small lower crossing and one staircase now have room to spawn
 
 ### Changed
 - Now requires Moog's Structure Lib 4.0.0 or newer
