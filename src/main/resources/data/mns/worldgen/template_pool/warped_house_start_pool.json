@@ -1,0 +1,90 @@
+{
+  "name": "mns:warped_house_start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/houses/warped_house_1",
+        "locations": {
+          "1.20-1.20.2": "mns:1_20_0/houses/warped_house_1",
+          "1.20.3-1.20.4": "mns:1_20_3/houses/warped_house_1",
+          "1.20.5-1.20.6": "mns:1_20_5/houses/warped_house_1"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/houses/warped_house_2",
+        "locations": {
+          "1.20-1.20.2": "mns:1_20_0/houses/warped_house_2",
+          "1.20.3-1.20.4": "mns:1_20_3/houses/warped_house_2",
+          "1.20.5-1.20.6": "mns:1_20_5/houses/warped_house_2"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/houses/warped_house_3",
+        "locations": {
+          "1.20-1.20.2": "mns:1_20_0/houses/warped_house_3",
+          "1.20.3-1.20.4": "mns:1_20_3/houses/warped_house_3",
+          "1.20.5-1.20.6": "mns:1_20_5/houses/warped_house_3"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/houses/warped_house_4",
+        "locations": {
+          "1.20-1.20.2": "mns:1_20_0/houses/warped_house_4",
+          "1.20.3-1.20.4": "mns:1_20_3/houses/warped_house_4",
+          "1.20.5-1.20.6": "mns:1_20_5/houses/warped_house_4"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/houses/warped_house_5",
+        "locations": {
+          "1.20-1.20.2": "mns:1_20_0/houses/warped_house_5",
+          "1.20.3-1.20.4": "mns:1_20_3/houses/warped_house_5",
+          "1.20.5-1.20.6": "mns:1_20_5/houses/warped_house_5"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/houses/warped_house_6",
+        "locations": {
+          "1.20-1.20.2": "mns:1_20_0/houses/warped_house_6",
+          "1.20.3-1.20.4": "mns:1_20_3/houses/warped_house_6",
+          "1.20.5-1.20.6": "mns:1_20_5/houses/warped_house_6"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}
