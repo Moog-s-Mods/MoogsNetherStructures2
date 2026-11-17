@@ -1,0 +1,20 @@
+{
+  "name": "mns:large_house_1_start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_20_5/houses/large_house_1",
+        "locations": {
+          "1.20-1.20.1": "mns:1_20_0/houses/large_house_1",
+          "1.20.2-1.20.4": "mns:1_20_2/houses/large_house_1",
+          "1.20.5-1.20.6": "mns:1_20_5/houses/large_house_1"
+        },
+        "processors": "mns:large_house_spawners",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

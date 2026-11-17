@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mns:crimson_forge",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "moogs_structures:advanced_random_spread",
+    "salt": 190377,
+    "spacing": 24,
+    "separation": 19
+  }
+}
