@@ -1,0 +1,14 @@
+{
+  "processors": [
+    {
+      "processor_type": "moogs_structures:trial_spawner_randomizing_processor",
+      "normal_config": "mns:large_arena/normal",
+      "ominous_config": "mns:large_arena/ominous"
+    },
+    {
+      "processor_type": "moogs_structures:vault_randomizing_processor",
+      "loot_table": "mns:vaults/large_arena/main",
+      "ominous_loot_table": "mns:vaults/large_arena/main_ominous"
+    }
+  ]
+}

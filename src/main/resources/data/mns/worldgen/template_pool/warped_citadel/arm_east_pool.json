@@ -1,0 +1,20 @@
+{
+  "name": "mns:warped_citadel/arm_east_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_21_9/warped_citadel/arm_east",
+        "locations": {
+          "1.21-1.21.4": "mns:1_21_0/warped_citadel/arm_east",
+          "1.21.5-1.21.8": "mns:1_21_5/warped_citadel/arm_east",
+          "1.21.9-26.3": "mns:1_21_9/warped_citadel/arm_east"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

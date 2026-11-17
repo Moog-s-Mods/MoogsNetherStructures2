@@ -1,0 +1,21 @@
+{
+  "name": "mns:warped_tower_start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_21_9/warped_tower",
+        "locations": {
+          "1.21-1.21.1": "mns:1_21_0/warped_tower",
+          "1.21.2-1.21.3": "mns:1_21_2/warped_tower",
+          "1.21.4-1.21.8": "mns:1_21_4/warped_tower",
+          "1.21.9-26.3": "mns:1_21_9/warped_tower"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}

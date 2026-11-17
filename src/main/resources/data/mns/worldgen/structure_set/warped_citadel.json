@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mns:warped_citadel",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "moogs_structures:advanced_random_spread",
+    "salt": 615384027,
+    "spacing": 110,
+    "separation": 60
+  }
+}

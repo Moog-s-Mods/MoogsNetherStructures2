@@ -5,6 +5,7 @@
 ## [3.1.2]
 
 ### Added
+- Five new structures: the Crimson Manor, the Warped Citadel, the Warped Tower, the Crimson Library and the Giant Ribcage
 - Nether chests can hold maps that lead to the Giant Skull, the Train, the Copper Tower, the Nether Tower, the Small Arena, the Large Arena and the Dragon Arena
 - Structures now spawn in Better Nether and Incendium biomes, and in other mods' Nether biomes
 

@@ -12,7 +12,10 @@
     "mns:copper_tower",
     "mns:crimson_forge",
     "mns:crimson_lava_well",
+    "mns:crimson_library",
+    "mns:crimson_manor",
     "mns:dragon_arena",
+    "mns:giant_ribcage",
     "mns:giant_skull",
     "mns:grave_yard",
     "mns:large_arena",
@@ -50,8 +53,10 @@
     "mns:very_small_nether_brick",
     "mns:very_small_nether_brick_2",
     "mns:very_small_nether_brick_3",
+    "mns:warped_citadel",
     "mns:warped_dome",
     "mns:warped_house",
-    "mns:warped_pool"
+    "mns:warped_pool",
+    "mns:warped_tower"
   ]
 }
