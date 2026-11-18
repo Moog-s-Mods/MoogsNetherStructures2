@@ -53,6 +53,7 @@
     },
     {
       "processor_type": "moogs_structures:trial_spawner_randomizing_processor",
+      "nbt_version": "1.21",
       "normal_config": "mns:large_arena/normal",
       "ominous_config": "mns:large_arena/ominous"
     },
