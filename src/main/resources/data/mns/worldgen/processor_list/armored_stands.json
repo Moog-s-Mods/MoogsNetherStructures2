@@ -1,0 +1,157 @@
+{
+  "processors": [
+    {
+      "processor_type": "moogs_structures:equip_armor_stand_processor",
+      "armor_sets": [
+        {
+          "weight": 5,
+          "armor": {
+            "chest": {
+              "id": "minecraft:iron_chestplate",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:copper",
+                  "pattern": "minecraft:rib"
+                }
+              }
+            },
+            "feet": {
+              "id": "minecraft:iron_boots"
+            }
+          }
+        },
+        {
+          "weight": 4,
+          "armor": {
+            "head": {
+              "id": "minecraft:chainmail_helmet",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:snout"
+                }
+              }
+            },
+            "chest": {
+              "id": "minecraft:chainmail_chestplate",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:iron",
+                  "pattern": "minecraft:snout"
+                }
+              }
+            },
+            "legs": {
+              "id": "minecraft:chainmail_leggings"
+            },
+            "feet": {
+              "id": "minecraft:chainmail_boots"
+            }
+          }
+        },
+        {
+          "weight": 3,
+          "armor": {
+            "head": {
+              "id": "minecraft:golden_helmet",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:gold",
+                  "pattern": "minecraft:rib"
+                }
+              }
+            },
+            "chest": {
+              "id": "minecraft:golden_chestplate",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:gold",
+                  "pattern": "minecraft:rib"
+                }
+              }
+            },
+            "legs": {
+              "id": "minecraft:golden_leggings"
+            }
+          }
+        },
+        {
+          "weight": 2,
+          "armor": {
+            "head": {
+              "id": "minecraft:iron_helmet",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:gold",
+                  "pattern": "minecraft:snout"
+                }
+              }
+            },
+            "chest": {
+              "id": "minecraft:iron_chestplate",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:gold",
+                  "pattern": "minecraft:snout"
+                },
+                "Enchantments": [
+                  {
+                    "id": "minecraft:protection",
+                    "lvl": 1
+                  }
+                ]
+              }
+            },
+            "legs": {
+              "id": "minecraft:iron_leggings"
+            },
+            "feet": {
+              "id": "minecraft:iron_boots"
+            }
+          }
+        },
+        {
+          "weight": 1,
+          "armor": {
+            "head": {
+              "id": "minecraft:iron_helmet",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:netherite",
+                  "pattern": "minecraft:rib"
+                }
+              }
+            },
+            "chest": {
+              "id": "minecraft:diamond_chestplate",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:netherite",
+                  "pattern": "minecraft:rib"
+                },
+                "Enchantments": [
+                  {
+                    "id": "minecraft:protection",
+                    "lvl": 2
+                  }
+                ]
+              }
+            },
+            "legs": {
+              "id": "minecraft:iron_leggings",
+              "tag": {
+                "Trim": {
+                  "material": "minecraft:netherite",
+                  "pattern": "minecraft:rib"
+                }
+              }
+            },
+            "feet": {
+              "id": "minecraft:iron_boots"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -11,7 +11,7 @@
           "1.20.3-1.20.4": "mns:1_20_3/crimson_manor/tower",
           "1.20.5-1.20.6": "mns:1_20_5/crimson_manor/tower"
         },
-        "processors": "minecraft:empty",
+        "processors": "mns:armored_stands",
         "projection": "rigid",
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
