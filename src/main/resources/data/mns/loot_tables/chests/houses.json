@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 4,
           "name": "minecraft:diamond_shovel",
           "functions": [
             {
