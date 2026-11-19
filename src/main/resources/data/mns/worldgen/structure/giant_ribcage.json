@@ -4,6 +4,7 @@
   "size": 1,
   "biomes": "#mns:has_structure/soul_biomes",
   "land_search_direction": "HIGHEST_LAND",
+  "burying_type": "LOWEST_CORNER",
   "cannot_spawn_in_liquid": true,
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
