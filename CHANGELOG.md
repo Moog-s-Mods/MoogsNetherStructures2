@@ -16,6 +16,7 @@
 - The small Nether brick ruin now looks like itself instead of the blackstone one
 - The armour stand in the mega fortress's open-air fork now wears its armour
 - Mega fortress guards in the large crossing, the small lower crossing and one staircase now have room to spawn
+- Chests that couldn't be opened because of a block above them now open
 
 ### Changed
 - Now requires Moog's Structure Lib 4.0.0 or newer
