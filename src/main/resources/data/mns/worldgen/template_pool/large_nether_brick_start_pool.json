@@ -9,16 +9,8 @@
         "locations": {
           "1.20-1.20.6": "mns:1_20_0/ruins/large_nether_brick"
         },
-        "processors": "minecraft:empty",
+        "processors": "mns:follow_floor",
         "projection": "rigid",
-        "adaptation_area": {
-          "columns": [
-            { "x": [0, 13], "z": [2, 6] },
-            { "x": [15, 18], "z": [2, 6] },
-            { "x": [19, 21], "z": [8, 8] }
-          ],
-          "outside_follows_ground": true
-        },
         "element_type": "moogs_structures:versioned_single_pool_element"
       }
     }

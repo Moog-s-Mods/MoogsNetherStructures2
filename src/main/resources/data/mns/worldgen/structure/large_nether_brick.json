@@ -7,16 +7,6 @@
   "cannot_spawn_in_liquid": true,
   "step": "surface_structures",
   "terrain_adaptation": "none",
-  "enhanced_terrain_adaptation": {
-    "kernel_size": 24,
-    "kernel_distance": 16,
-    "top": "carve",
-    "bottom": "bury",
-    "band": {
-      "bottom": 1,
-      "top": 1
-    }
-  },
   "start_height": {
     "absolute": 0
   },
