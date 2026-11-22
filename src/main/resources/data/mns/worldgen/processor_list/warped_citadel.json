@@ -3,13 +3,13 @@
     {
       "processor_type": "moogs_structures:trial_spawner_randomizing_processor",
       "nbt_version": "1.21",
-      "normal_config": "mns:large_arena/normal",
-      "ominous_config": "mns:large_arena/ominous"
+      "normal_config": "mns:warped_citadel/normal",
+      "ominous_config": "mns:warped_citadel/ominous"
     },
     {
       "processor_type": "moogs_structures:vault_randomizing_processor",
-      "loot_table": "mns:vaults/large_arena/main",
-      "ominous_loot_table": "mns:vaults/large_arena/main_ominous"
+      "loot_table": "mns:vaults/warped_citadel/main",
+      "ominous_loot_table": "mns:vaults/warped_citadel/main_ominous"
     }
   ]
 }
