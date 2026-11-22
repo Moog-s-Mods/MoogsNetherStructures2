@@ -1,0 +1,31 @@
+{
+  "name": "mns:train/upper_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "mns:1_21_9/train",
+        "locations": {
+          "1.21-1.21.8": "mns:1_21_0/train",
+          "1.21.9-26.3": "mns:1_21_9/train"
+        },
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "enhanced_terrain_adaptation": {
+          "kernel_size": 20,
+          "kernel_distance": 36,
+          "top": "carve",
+          "bottom": "none",
+          "padding": {
+            "x": 2,
+            "z": 2,
+            "top": 4,
+            "bottom": 0
+          }
+        },
+        "element_type": "moogs_structures:versioned_single_pool_element"
+      }
+    }
+  ]
+}
