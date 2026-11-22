@@ -4,9 +4,9 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:1_21_0/sandy_skull",
+        "location": "mns:1_21_0/sandy_skull_lower",
         "locations": {
-          "1.21-26.3": "mns:1_21_0/sandy_skull"
+          "1.21-26.3": "mns:1_21_0/sandy_skull_lower"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",

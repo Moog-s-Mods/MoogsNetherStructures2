@@ -5,7 +5,7 @@
   "start_pool": "mns:sandy_skull_start_pool",
 
 
-  "size": 1,
+  "size": 2,
 
   "biomes": "#mns:has_structure/nether_biomes",
   "land_search_direction": "HIGHEST_LAND",
@@ -14,7 +14,19 @@
 
 
   "step": "surface_structures",
-  "terrain_adaptation": "beard_thin",
+  "terrain_adaptation": "none",
+  "enhanced_terrain_adaptation": {
+    "kernel_size": 20,
+    "kernel_distance": 36,
+    "top": "bury",
+    "bottom": "bury",
+    "padding": {
+      "x": 2,
+      "z": 2,
+      "top": 0,
+      "bottom": -1
+    }
+  },
   "start_height": {
     "absolute": 1
   },
