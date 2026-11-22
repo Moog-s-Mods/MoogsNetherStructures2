@@ -5,11 +5,10 @@
     {
       "weight": 1,
       "element": {
-        "location": "mns:1_20_5/train",
+        "location": "mns:1_20_5/train_lower",
         "locations": {
-          "1.20-1.20.1": "mns:1_20_0/train",
-          "1.20.2-1.20.4": "mns:1_20_2/train",
-          "1.20.5-1.20.6": "mns:1_20_5/train"
+          "1.20-1.20.4": "mns:1_20_0/train_lower",
+          "1.20.5-1.20.6": "mns:1_20_5/train_lower"
         },
         "processors": "minecraft:empty",
         "projection": "rigid",
